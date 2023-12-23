@@ -76,16 +76,16 @@ function ProjectList() {
   return (
     <div
       id="projects"
-      className="flex flex-col md:grid md:gap-10 w-full   gap-y-10 md:aspect-video   "
+      className="flex flex-col md:grid md:gap-10 w-full   gap-y-10     "
     >
-      <div className="flex flex-col  md:grid grid-cols-[60%_30%] gap-10  ">
+      <div className="flex flex-col   md:grid grid-cols-[60%_30%] gap-10  ">
         <div
           key={"shopwise"}
           className="projects bg-white rounded-lg shadow-xl relative"
         >
           <img
             src="assets/projects/shopwise.png"
-            className="object-cover inset-0 transition duration-300 ease-in-out rounded-lg bg-gray-500 h-full"
+            className="object-cover inset-0 transition duration-300 ease-in-out rounded-lg bg-gray-500 "
             alt=""
           />
           <div className=" rounded-lg"></div>
@@ -252,7 +252,7 @@ function ProjectList() {
           <div className="  "></div>
           <img
             src="assets/projects/edcomposer.png"
-            className="object-cover bg-blend-multiply	 md:aspect-[13/4.8] inset-0 transition duration-300 ease-in-out rounded-lg"
+            className="object-cover bg-blend-multiply	 md:aspect-[13/4.8] h-[100%] inset-0 transition duration-300 ease-in-out rounded-lg"
             alt=""
           />
 
