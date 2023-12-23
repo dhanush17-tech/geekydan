@@ -7,6 +7,7 @@ import HomePage from "../components/home";
 import AboutMe from "../components/aboutme";
 import Experience from "../components/experience";
 import MyProjects from "../components/projects";
+import { Analytics } from "@vercel/analytics/react";
 
 import { Rubik } from "next/font/google";
 import Mentorship from "../components/mentorship";
@@ -18,18 +19,24 @@ const rubik = Rubik({ subsets: ["latin"] });
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className={`relative min-h-screen bg-backgroundColor ${rubik.style}`}>
-      {/* BlurredBackground as the base layer for the entire application */}
-      <BlurredBackground />
-      {/* The main content of the app */}
-      <main className="relative z-10">
-        {/* Your page content */}
-        <Component {...pageProps} />
-      </main>
+    <>
+      {" "}
+      <Analytics />
+      <div
+        className={`relative min-h-screen bg-backgroundColor ${rubik.style}`}
+      >
+        {/* BlurredBackground as the base layer for the entire application */}
+        <BlurredBackground />
+        {/* The main content of the app */}
+        <main className="relative z-10">
+          {/* Your page content */}
+          <Component {...pageProps} />
+        </main>
 
-      {/* Other components like NavBar, Footer, etc. */}
-      {/* Make sure they have a higher z-index if needed */}
-    </div>
+        {/* Other components like NavBar, Footer, etc. */}
+        {/* Make sure they have a higher z-index if needed */}
+      </div>
+    </>
   );
 }
 
