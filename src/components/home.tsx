@@ -61,13 +61,37 @@ export default function HomePage() {
       </div>
       <div className="hidden md:flex flex-col items-center absolute left-5 bottom-5 space-y-8">
         {/* Social Icons Column */}
-        <FontAwesomeIcon icon={faGithub} className="text-white/50 text-2xl" />
-        <FontAwesomeIcon icon={faLinkedin} className="text-white/50 text-2xl" />
-        <FontAwesomeIcon icon={faXTwitter} className="text-white/50 text-2xl" />
-        <FontAwesomeIcon
-          icon={faInstagram}
-          className="text-white/50 text-2xl"
-        />
+        <Link href={"https://github.com/dhanush17-tech"}>
+          <FontAwesomeIcon
+            aria-label="Dhanush Vardhan Github"
+            icon={faGithub}
+            className="text-white/50 text-2xl"
+          />{" "}
+        </Link>
+        <Link href={"https://www.linkedin.com/in/dhanush-vardhan-30bb881b0/"}>
+          {" "}
+          <FontAwesomeIcon
+            aria-label="Dhanush Vardhan LinkedIn"
+            icon={faLinkedin}
+            className="text-white/50 text-2xl"
+          />{" "}
+        </Link>
+        <Link href={"https://twitter.com/geeky_dan"}>
+          {" "}
+          <FontAwesomeIcon
+            aria-label="Dhanush Vardhan X Twitter"
+            icon={faXTwitter}
+            className="text-white/50 text-2xl"
+          />{" "}
+        </Link>
+        <Link href={"https://www.instagram.com/dhanu_sh.17/"}>
+          {" "}
+          <FontAwesomeIcon
+            icon={faInstagram}
+            aria-label="Dhanush Vardhan Instagram"
+            className="text-white/50 text-2xl"
+          />{" "}
+        </Link>
         <div className="w-3 bg-white/10  h-36"></div>
       </div>
 
@@ -105,9 +129,7 @@ export default function HomePage() {
             Resume
           </button> */}
 
-          <p className="text-xl md:text-2xl  text-blue ">
-            Hello there 👋
-          </p>
+          <p className="text-xl md:text-2xl  text-blue ">Hello there 👋</p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl   text-white leading-none my-4">
             I'm{" "}
             <span className="relative before:absolute before:inset-x-0 before:bottom-0 leading-none md:before:bottom-2 lg:before:bottom-2  before:block before:w-[100%] before:h-[14px] before:bg-blue before:bg-opacity-60">

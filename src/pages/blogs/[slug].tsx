@@ -15,6 +15,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import BlurredBackground from "../../components/blurredBack";
+import Link from "next/link";
 // Assume getPostMetadata is a synchronous function. If it's async, you should await it.
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -80,24 +81,35 @@ const PostPage: React.FC<PostPageProps> = ({ post }) => {
 
               {/* Facebook */}
               <li>
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  className="text-white/50 text-xl"
-                />
+                <Link
+                  aria-label="Dhanush Vardhan Github"
+                  href={"https://github.com/dhanush17-tech"}
+                >
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    className="text-white/50 text-xl"
+                  />
+                </Link>
               </li>
               {/* Share */}
               <li>
-                <FontAwesomeIcon
-                  icon={faXTwitter}
-                  className="text-white/50 text-xl"
-                />
+                <Link href={ "https://twitter.com/geeky_dan"}>
+                  {" "}
+                  <FontAwesomeIcon
+                    icon={faXTwitter}
+                    className="text-white/50 text-xl"
+                  />{" "}
+                </Link>
               </li>
-              <li>
-                <FontAwesomeIcon
-                  icon={faShare}
-                  className="text-white/50 text-xl"
-                />
-              </li>
+              <button>
+                {" "}
+                <li>
+                  <FontAwesomeIcon
+                    icon={faShare}
+                    className="text-white/50 text-xl"
+                  />
+                </li>
+              </button>
             </ul>
           </div>
           <div className="my-12 text-start "></div>

@@ -83,7 +83,10 @@ export function BlogCard({ post }: { post: PostMetadata }) {
   return (
     <Link key={post.slug + post.title} href={`/blogs/${post.slug}`}>
       <div className="blogs flex flex-row md:flex-row md:items-center w-full rounded-lg overflow-hidden ">
+        <div className="max-w-[100px]"></div>
         <Image
+          width={100}
+          height={100}
           src={post.imgUrl}
           alt={post.title}
           className="object-cover h-full w-20 md:w-36 rounded-lg"

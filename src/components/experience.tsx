@@ -190,15 +190,15 @@ function MyExperience() {
           <div
             className="relative aspect-video rounded-lg shadow-xl md:-rotate-1"
            >
-            <Image
-              src="assets/hackathons/hackprinceton.png"
+            <img
+              src="/assets/hackathons/hackprinceton.png"
               className=" object-cover aspect-video inset-0 opacity-50 transition duration-300 ease-in-out rounded-lg"
-              alt=""
+              alt="Winner at HackPrinceton"
             />
             <div className="absolute top-5 left-5 right-5 h-full">
               {" "}
               <h1 className=" text-xl text-white font-bold">
-                #1 Winner at Princeton (Vibewire Track)
+                #1 Winner at HackPrinceton (Vibewire Track)
               </h1>
               <div className="absolute flex justify-center items-center  bottom-10 right-0 rounded-full h-8 w-8  bg-white">
                 <FontAwesomeIcon icon={faPlay} className="text-blue" />
@@ -214,10 +214,10 @@ function MyExperience() {
             className="relative aspect-video rounded-lg shadow-xl md:rotate-1"
            
           >
-            <Image
-              src="assets/hackathons/calhacks1.png"
+            <img
+              src="/assets/hackathons/calhacks1.png"
               className=" object-cover aspect-video inset-0 opacity-50 transition duration-300 ease-in-out rounded-lg"
-              alt=""
+              alt="Winner at CalHacks"
             />
             <div className="absolute top-5 left-5 right-5 h-full">
               {" "}
@@ -235,10 +235,11 @@ function MyExperience() {
           <div
             className="relative aspect-video rounded-lg shadow-xl md:-rotate-1"
            >
-            <Image
-              src="assets/hackathons/masseyhacks.png"
+            <img
+              
+              src="/assets/hackathons/masseyhacks.png"
               className=" object-cover aspect-video inset-0 opacity-50 transition duration-300 ease-in-out rounded-lg"
-              alt=""
+              alt="Winner at Massey Hacks"
             />
             <div className="absolute top-5 left-5 right-5 h-full">
               {" "}
@@ -259,10 +260,10 @@ function MyExperience() {
           <div
             className="relative aspect-video rounded-lg shadow-xl md:rotate-1"
            >
-            <Image
-              src="assets/hackathons/pinnacle.png"
+            <img
+              src="/assets/hackathons/pinnacle.png"
               className=" object-cover aspect-video inset-0 opacity-50 transition duration-300 ease-in-out rounded-lg"
-              alt=""
+              alt="Participant Pinnacle 2023"
             />
             <div className="absolute top-5 left-5 right-5 h-full">
               {" "}

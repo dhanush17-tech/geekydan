@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons"; // components/Footer.js
 import { GlowingStarsBackgroundCard } from "./glowing-stars";
 import { BackgroundBeams } from "./backgroundBeams";
+import Link from "next/link";
 export default function Footer() {
   const year = new Date().getFullYear(); // Dynamic year for the copyright notice
 
@@ -53,21 +54,36 @@ export default function Footer() {
           Dhanush Vardhan
         </h1>
         <div className="flex flex-row space-x-10 mt-5">
-        
-          <FontAwesomeIcon icon={faGithub} className="text-slate-400 text-xl" />
- 
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            className="text-slate-400 text-xl"
-          />
-          <FontAwesomeIcon
-            icon={faXTwitter}
-            className="text-slate-400 text-xl"
-          />
-          <FontAwesomeIcon
-            icon={faInstagram}
-            className="text-slate-400 text-xl"
-          />
+          <Link href={"https://github.com/dhanush17-tech"}>
+            <FontAwesomeIcon
+              icon={faGithub}
+              className="text-slate-400 text-xl"
+            />
+          </Link>
+          <Link href={"https://www.linkedin.com/in/dhanush-vardhan-30bb881b0/"}>
+            {" "}
+            <FontAwesomeIcon
+              aria-label="Dhanush Vardhan LinkedIn"
+              icon={faLinkedin}
+              className="text-slate-400 text-xl"
+            />
+          </Link>{" "}
+          <Link href={"https://twitter.com/geeky_dan"}>
+            {" "}
+            <FontAwesomeIcon
+              aria-label="Dhanush Vardhan X Twitter"
+              icon={faXTwitter}
+              className="text-slate-400 text-xl"
+            />{" "}
+          </Link>
+          <Link href={"https://www.instagram.com/dhanu_sh.17/"}>
+            {" "}
+            <FontAwesomeIcon
+              aria-label="Dhanush Vardhan Instagram"
+              icon={faInstagram}
+              className="text-slate-400 text-xl"
+            />
+          </Link>
         </div>
       </div>
       {/* <GlowingStarsBackgroundCard className="w-full h-full"></GlowingStarsBackgroundCard> */}

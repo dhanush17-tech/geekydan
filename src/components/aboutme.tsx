@@ -37,13 +37,17 @@ export default function AboutMe() {
 
   return (
     <>
-      <div id="aboutme" className=" flex flex-col-reverse md:grid  md:grid-cols-[40%_60%] items-center justify-center md:pl-14 md:pr-24">
+      <div
+        id="aboutme"
+        className=" flex flex-col-reverse md:grid  md:grid-cols-[40%_60%] items-center justify-center md:pl-14 md:pr-24"
+      >
         <div className="flex justify-center items-center h-full pr-10 md:pr-0 ">
           <div className="photo relative h-[40vh] w-[30vh] md:w-[50vh] md:h-[55vh] mt-5 md:mt-0 self-center text-center rounded-lg border-7 border-blue bg-white before:before-absolute before:rounded-lg before:border-blue before:border-[5px] object-cover">
             <Image
+              fill={true}
               className="h-full w-full rounded-lg object-cover border-[5px] border-blue after::shadow-xl"
-              src="assets/me.jpg"
-              alt="Description"
+              src="/assets/me.jpg"
+              alt="Photo of Dhanush Vardhan"
             />
           </div>
         </div>{" "}
@@ -67,13 +71,16 @@ export default function AboutMe() {
                 <br />
                 I've also had some awesome times speaking like{" "}
                 <a
+                  aria-label="Google IO Extended"
                   href="https://gdg.community.dev/gdg-coimbatore/"
                   className="text-blue px-1"
                 >
                   Google IO Extended 2022
-                </a>{", "}
+                </a>
+                {", "}
                 <span className="text-blue"> Sunhacks 2023</span> and{" "}
                 <a
+                  aria-label="Coders Evoke"
                   href="https://www.youtube.com/watch?v=s4VScWsR5OY"
                   className="text-blue px-1"
                 >
@@ -84,7 +91,11 @@ export default function AboutMe() {
                 <br />
                 <br />
                 Oh, and hackathons? Totally my thing. I've snagged wins at{" "}
-                <a href="https://www.calhacks.io/" className="text-blue">
+                <a
+                  aria-label="CalHacks"
+                  href="https://www.calhacks.io/"
+                  className="text-blue"
+                >
                   CalHacks
                 </a>{" "}
                 and{" "}
