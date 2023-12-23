@@ -252,7 +252,7 @@ function ProjectList() {
           <div className="  "></div>
           <img
             src="assets/projects/edcomposer.png"
-            className="object-cover bg-blend-multiply	 md:aspect-[13/4.8] h-[100%] inset-0 transition duration-300 ease-in-out rounded-lg"
+            className="object-cover bg-blend-multiply	 md:aspect-[13/4.8] h-[0%] inset-0 transition duration-300 ease-in-out rounded-lg"
             alt=""
           />
 
