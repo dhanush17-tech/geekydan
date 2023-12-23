@@ -39,7 +39,7 @@ useEffect(() => {
     window.dataLayer.push(arguments);
   };
   window.gtag("js", new Date());
-  window.gtag("config", "<GA-id>");
+  window.gtag("config", "G-EW1YXYND70");
 }, []);
 
 const Main = ({ posts }: MainProps) => {
