@@ -14,7 +14,7 @@ import Mentorship from "../components/mentorship";
 import Contact from "../components/contactMe";
 import Footer from "../components/footer";
 import Blogs from "../components/blogs";
-import { Head } from "next/document";
+import Head  from "next/head";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
