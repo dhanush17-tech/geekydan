@@ -79,7 +79,7 @@ function ProjectList() {
       className="flex flex-col md:grid md:gap-10 w-full   gap-y-10 md:aspect-video   "
     >
       <div className="flex flex-col  md:grid grid-cols-[60%_30%] gap-10  ">
-        <a
+        <div
           key={"shopwise"}
           className="projects bg-white rounded-lg shadow-xl relative"
         >
@@ -116,9 +116,9 @@ function ProjectList() {
             </div>
           </div>
           {/* Add more content as needed */}
-        </a>
+        </div>
         <div className="flex flex-col justify-between space-y-5">
-          <a
+          <div
             key={"heartpal"}
             className="projects bg-white rounded-lg shadow-xl relative md:aspect-[13/7.5]"
           >
@@ -161,9 +161,9 @@ function ProjectList() {
               </div>
             </div>
             {/* Add more content as needed */}
-          </a>
+          </div>
 
-          <a
+          <div
             key={"medicon"}
             className="projects bg-white rounded-lg shadow-xl relative md:aspect-[13/6.5]"
           >
@@ -200,11 +200,11 @@ function ProjectList() {
               </div>
             </div>
             {/* Add more content as needed */}
-          </a>
+          </div>
         </div>
       </div>
       <div className="flex flex-col md:grid grid-cols-[40%_50%] gap-10">
-        <a
+        <div
           key={"blik"}
           className="projects bg-white rounded-lg shadow-xl relative md:aspect-[13/6]"
         >
@@ -244,8 +244,8 @@ function ProjectList() {
             </div>
           </div>
           {/* Add more content as needed */}
-        </a>
-        <a
+        </div>
+        <div
           key={"edcomposer"}
           className="projects bg-white rounded-lg shadow-xl  relative md:aspect-[13/4.8]"
         >
@@ -282,7 +282,7 @@ function ProjectList() {
             </p>
           </div>
           {/* Add more content as needed */}
-        </a>
+        </div>
       </div>
     </div>
   );
