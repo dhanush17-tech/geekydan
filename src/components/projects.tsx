@@ -84,13 +84,13 @@ function ProjectList() {
           key={"shopwise"}
           className="projects bg-white rounded-lg shadow-xl relative"
         >
-          <img 
+          <img
             src="/assets/projects/shopwise.png"
             className="object-cover inset-0 transition duration-300 ease-in-out rounded-lg w-full h-full bg-gray-500 "
             alt=""
           />
           <div className=" rounded-lg"></div>
-          <div className="absolute p-4 bottom-0 h-full rounded-lg  bg-gradient-to-t from-gray-800 to-transparent left-0 right-0">
+          <div className="absolute p-4 bottom-0 h-full rounded-lg  bg-gradient-to-t from-gray-900 to-transparent left-0 right-0">
             <div className="absolute p-4 bottom-0   rounded-lg  left-0 right-0">
               <div className="flex flex-row justify-between">
                 <h2 className="text-xl font-sans font-[500] text-blue ">
@@ -129,7 +129,7 @@ function ProjectList() {
               className="object-cover  md:aspect-[13/7.5] inset-0 transition duration-300 ease-in-out rounded-lg"
               alt=""
             />
-            <div className="absolute p-4 bottom-0 h-full rounded-lg flex flex-col justify-end bg-gradient-to-t from-gray-800 to-transparent left-0 right-0">
+            <div className="absolute p-4 bottom-0 h-full rounded-lg flex flex-col justify-end bg-gradient-to-t from-gray-900 to-transparent left-0 right-0">
               <div className="absolute p-4 bottom-0 left-0 right-0">
                 <div className="flex flex-row justify-between">
                   <h2 className="text-xl font-sans font-[500] text-blue ">
@@ -175,7 +175,7 @@ function ProjectList() {
                 alt=""
               />
               {/* Overlay */}
-              <div className="absolute p-4 bottom-0 rounded-lg flex flex-col justify-end  h-full  bg-gradient-to-t from-gray-800 to-transparent left-0 right-0">
+              <div className="absolute p-4 bottom-0 rounded-lg flex flex-col justify-end  h-full  bg-gradient-to-t from-gray-900 to-transparent left-0 right-0">
                 <div className="flex flex-row justify-between">
                   <h2 className="text-xl font-sans font-[500] text-blue ">
                     MedicOn
@@ -215,7 +215,7 @@ function ProjectList() {
             className="object-cover  md:aspect-[13/6] inset-0 transition w-full duration-300 ease-in-out rounded-lg"
             alt=""
           />
-          <div className="absolute p-4 bottom-0 h-full rounded-lg bg-gradient-to-t from-gray-800 to-transparent left-0 right-0">
+          <div className="absolute p-4 bottom-0 h-full rounded-lg bg-gradient-to-t from-gray-900 to-transparent left-0 right-0">
             <div className="absolute flex flex-col justify-end p-4 bottom-0 left-0 right-0">
               <div className="flex flex-row justify-between">
                 <h2 className="text-xl font-sans font-[500] text-blue ">
@@ -248,16 +248,16 @@ function ProjectList() {
         </div>
         <div
           key={"edcomposer"}
-          className="projects bg-white rounded-lg shadow-xl  relative md:aspect-[13/4.8]"
+          className="projects bg-white rounded-lg shadow-xl aspect-video  relative md:aspect-[13/4.8]"
         >
           <div className="  "></div>
           <img
-            src="/assets/projects/edcomposer.png"
-            className="object-cover bg-blend-multiply	 md:aspect-[13/4.8] h-[0%] inset-0 transition duration-300 ease-in-out rounded-lg"
+            src="assets/projects/edcomposer.png"
+            className="object-cover bg-blend-multiply	aspect-video  md:aspect-[13/4.8]  inset-0 transition duration-300 ease-in-out rounded-lg"
             alt=""
           />
 
-          <div className="absolute flex flex-col rounded-lg justify-end h-full p-4 bottom-0 bg-gradient-to-t from-gray-800 to-transparent left-0 right-0">
+          <div className="absolute flex flex-col rounded-lg justify-end h-full p-4 bottom-0 bg-gradient-to-t from-gray-900 to-transparent left-0 right-0">
             <div className="flex flex-row  justify-between">
               <h2 className="text-xl font-sans font-[500] text-blue ">
                 EdComposer
