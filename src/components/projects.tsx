@@ -6,6 +6,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons"; // Make sure to import the icon
 import { useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function MyProjects() {
   const hasMounted = useHasMounted();
@@ -83,7 +84,7 @@ function ProjectList() {
           key={"shopwise"}
           className="projects bg-white rounded-lg shadow-xl relative"
         >
-          <img
+          <Image
             src="assets/projects/shopwise.png"
             className="object-cover inset-0 transition duration-300 ease-in-out rounded-lg bg-gray-500 "
             alt=""
@@ -123,7 +124,7 @@ function ProjectList() {
             className="projects bg-white rounded-lg shadow-xl relative md:aspect-[13/7.5]"
           >
             <div className=" rounded-lg bg-gradient-to-lr from-white to-black"></div>
-            <img
+            <Image
               src="assets/projects/heartpal.png"
               className="object-cover  md:aspect-[13/7.5] inset-0 transition duration-300 ease-in-out rounded-lg"
               alt=""
@@ -168,7 +169,7 @@ function ProjectList() {
             className="projects bg-white rounded-lg shadow-xl relative md:aspect-[13/6.5]"
           >
             <div className="relative rounded-lg md:aspect-[13/6.5]">
-              <img
+              <Image
                 src="assets/projects/medicon.png"
                 className="object-cover inset-0 w-full h-full transition duration-300 ease-in-out rounded-lg"
                 alt=""
@@ -209,7 +210,7 @@ function ProjectList() {
           className="projects bg-white rounded-lg shadow-xl relative md:aspect-[13/6]"
         >
           <div className=" rounded-lg bg-gradient-to-lr from-white to-black"></div>
-          <img
+          <Image
             src="assets/projects/blik.png"
             className="object-cover  md:aspect-[13/6] inset-0 transition w-full duration-300 ease-in-out rounded-lg"
             alt=""
@@ -250,7 +251,7 @@ function ProjectList() {
           className="projects bg-white rounded-lg shadow-xl  relative md:aspect-[13/4.8]"
         >
           <div className="  "></div>
-          <img
+          <Image
             src="assets/projects/edcomposer.png"
             className="object-cover bg-blend-multiply	 md:aspect-[13/4.8] h-[0%] inset-0 transition duration-300 ease-in-out rounded-lg"
             alt=""

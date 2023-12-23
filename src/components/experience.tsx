@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight, faPlay } from "@fortawesome/free-solid-svg-icons";
 import TagCloud from "TagCloud";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Experience() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -189,7 +190,7 @@ function MyExperience() {
           <div
             className="relative aspect-video rounded-lg shadow-xl md:-rotate-1"
            >
-            <img
+            <Image
               src="assets/hackathons/hackprinceton.png"
               className=" object-cover aspect-video inset-0 opacity-50 transition duration-300 ease-in-out rounded-lg"
               alt=""
@@ -213,7 +214,7 @@ function MyExperience() {
             className="relative aspect-video rounded-lg shadow-xl md:rotate-1"
            
           >
-            <img
+            <Image
               src="assets/hackathons/calhacks1.png"
               className=" object-cover aspect-video inset-0 opacity-50 transition duration-300 ease-in-out rounded-lg"
               alt=""
@@ -234,7 +235,7 @@ function MyExperience() {
           <div
             className="relative aspect-video rounded-lg shadow-xl md:-rotate-1"
            >
-            <img
+            <Image
               src="assets/hackathons/masseyhacks.png"
               className=" object-cover aspect-video inset-0 opacity-50 transition duration-300 ease-in-out rounded-lg"
               alt=""
@@ -258,7 +259,7 @@ function MyExperience() {
           <div
             className="relative aspect-video rounded-lg shadow-xl md:rotate-1"
            >
-            <img
+            <Image
               src="assets/hackathons/pinnacle.png"
               className=" object-cover aspect-video inset-0 opacity-50 transition duration-300 ease-in-out rounded-lg"
               alt=""

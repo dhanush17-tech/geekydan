@@ -2,6 +2,7 @@ import Link from "next/link";
 import { GetServerSideProps } from "next";
 import { PostMetadata } from "../../blogMethods/blogType";
 import { useEffect } from "react";
+import Image from "next/image";
 
 type Props = {
   posts: PostMetadata[];
@@ -82,7 +83,7 @@ export function BlogCard({ post }: { post: PostMetadata }) {
   return (
     <Link key={post.slug + post.title} href={`/blogs/${post.slug}`}>
       <div className="blogs flex flex-row md:flex-row md:items-center w-full rounded-lg overflow-hidden ">
-        <img
+        <Image
           src={post.imgUrl}
           alt={post.title}
           className="object-cover h-full w-20 md:w-36 rounded-lg"
