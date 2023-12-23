@@ -11,7 +11,7 @@ import { PostMetadata } from "../../blogMethods/blogType"; // Adjust the import 
 import Blogs from "../components/blogs";
 import { GetServerSideProps } from "next";
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps = async () => {
   const { getPostMetadata } = await import("../../blogMethods/readFile");
 
   const posts: PostMetadata[] = getPostMetadata(); // Call your server-side function here
@@ -35,10 +35,10 @@ const Main = ({ posts }: MainProps) => {
           <HomePage />
           <AboutMe />
           <Experience />
-          <MyProjects />  
-          <Blogs posts={posts} />  
+          <MyProjects />
+          <Blogs posts={posts} />
           <Mentorship />
-       <Contact />
+          <Contact />
         </div>
       </main>
     </div>
