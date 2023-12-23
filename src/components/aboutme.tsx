@@ -73,7 +73,7 @@ export default function AboutMe() {
                 <a
                   aria-label="Google IO Extended"
                   href="https://gdg.community.dev/gdg-coimbatore/"
-                  className="text-blue "
+                  className="text-blue"
                 >
                   Google IO Extended 2022
                 </a>

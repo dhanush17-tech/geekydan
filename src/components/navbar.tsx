@@ -38,7 +38,9 @@ export default function NavBar() {
     <nav className=" navbar relative flex px-5 my-5 md:px-10 md:my-8 justify-between items-center z-10  w-full ">
       <a href="./index.html" className="flex   ">
         {/* <img src="assets/nav_logo.png" className="h-5 md:h-8 pl-2" alt="Logo" /> */}
-        <h1 className="text-3xl lg:text-4xl font-[600]  text-blue">{"<DV/>"}</h1>
+        <h1 className="text-3xl lg:text-4xl font-[600]  text-blue">
+          {"<DV/>"}
+        </h1>
       </a>{" "}
       <button
         data-collapse-toggle="navbar-default"
@@ -105,7 +107,7 @@ export default function NavBar() {
             </a>
           </li>
 
-          <li key ="mentorship">
+          <li key="mentorship">
             <a
               href="#mentorship"
               className="block py-2 px-3  text-white/50 font-[600] rounded-md hover:bg-gray-100/10  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
