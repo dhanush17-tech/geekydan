@@ -1,5 +1,5 @@
 // shopwise.tsx
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   return {
     redirect: {
       destination:
