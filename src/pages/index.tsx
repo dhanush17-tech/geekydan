@@ -39,7 +39,18 @@ const Main = ({ posts }: MainProps) => {
       />
       <div className="flex flex-col min-h-screen">
         <Head>
-          <title>Dhanush Vardhan</title>
+          <title>Dhanush Vardhan</title>{" "}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@geeky_dan" />
+          <meta name="twitter:title" content="Dhanush Vardhan" />
+          <meta
+            name="twitter:description"
+            content="18 y/o self taught flutter dev • full time indie hacker 👨‍💻•  freelancer(helping startups soar) 🚀🚀."
+          />
+          <meta
+            name="twitter:image"
+            content="https://www.geekydan.dev/assets/memoji.png"
+          />
           <meta
             name="description"
             content="Dhanush Vardhan - Mobile App Developer, 5+ Hackathon Winner, and Tech Enthusiast. Discover my journey in programming, networking, and continuous learning."
@@ -48,7 +59,7 @@ const Main = ({ posts }: MainProps) => {
             name="keywords"
             content="Dhanush Vardhan, Mobile App Development, Hackathon, Programming, Technology, Learning, Networking"
           />
-          <link rel="canonical" href="http://www.yourdomain.com/" />
+          <link rel="canonical" href="http://www.geekydan.dev/" />
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-EW1YXYND70"

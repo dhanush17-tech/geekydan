@@ -112,21 +112,22 @@ function ProjectList() {
                 </div>
               </div>
               <p className="text-gray-400 text-sm font-normal">
-                Shop for the right deals at the right time!
+                Shopwise is your ultimate shopping companion that helps you find
+                the best deals and save money effortlessly 🛍️.{" "}
               </p>
             </div>
           </div>
           {/* Add more content as needed */}
         </div>
-        <div className="flex flex-col justify-between space-y-5">
+        <div className="flex flex-col justify-between ">
           <div
             key={"heartpal"}
-            className="projects bg-white rounded-lg shadow-xl relative md:aspect-[13/7.5]"
+            className="projects bg-white rounded-lg shadow-xl relative md:aspect-[13/9.5]"
           >
             <div className=" rounded-lg bg-gradient-to-lr from-white to-black"></div>
             <img
               src="/assets/projects/heartpal.png"
-              className="object-cover  md:aspect-[13/7.5] inset-0 transition duration-300 ease-in-out rounded-lg"
+              className="object-cover  md:aspect-[13/9.5] inset-0 transition duration-300 ease-in-out rounded-lg"
               alt=""
             />
             <div className="absolute p-4 bottom-0 h-full rounded-lg flex flex-col justify-end bg-gradient-to-t from-gray-900 to-transparent left-0 right-0">
@@ -240,7 +241,7 @@ function ProjectList() {
                 </div>
               </div>
               <p className="text-gray-400 text-sm font-normal">
-                An app that predicts crypto prices using AI!
+                An app that predicts crypto prices using AI 🤑 💸!
               </p>
             </div>
           </div>
