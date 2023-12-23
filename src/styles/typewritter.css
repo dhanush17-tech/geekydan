@@ -1,0 +1,16 @@
+.typewriter-text {
+  display: inline; /* or 'inline-block' as needed */
+    /* Adjust as needed */
+  /* other font styles to match your h1 */
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  width: 1ch; /* Represents the width of the character */
+  border-right: 2px solid transparent;
+  animation: blinkCursor 1s steps(2, start) infinite;
+}
+
+@keyframes blinkCursor {
+  50% { border-color: transparent; }
+}

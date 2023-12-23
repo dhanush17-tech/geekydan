@@ -1,0 +1,70 @@
+{
+  "name": "my-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@builder.io/react-hydration-overlay": "^0.0.5",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-regular-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@react-hooks-library/core": "^0.5.1",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.64",
+    "@types/react": "^18.2.38",
+    "@types/react-dom": "^18.2.17",
+    "autoprefixer": "^10.4.16",
+    "clsx": "^2.0.0",
+    "framer-motion": "^10.16.16",
+    "gray-matter": "^4.0.3",
+    "markdown-to-jsx": "^7.3.2",
+    "next": "^14.0.4",
+    "postcss": "^8.4.31",
+    "postcss-nested": "^6.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^9.0.1",
+    "remark": "^15.0.1",
+    "remark-gfm": "^4.0.0",
+    "remark-html": "^16.0.1",
+    "TagCloud": "^2.4.0",
+    "tailwind-merge": "^2.1.0",
+    "tailwindcss": "^3.3.5",
+    "tailwindcss-filters": "^3.0.0",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "start": "next start",
+    "build": "next build",
+    "test": "next test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.10"
+  }
+}

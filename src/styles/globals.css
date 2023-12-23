@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.mouse {
+	width: 30px;
+	height: 60px;
+  border: 3px solid rgba(255, 255, 255, 0.5); /* Updated for 50% opacity */
+	border-radius: 60px;
+	position: absolute;
+  right:50%;
+  bottom:3%;
+	&::before {
+		content: '';
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: rgba(255, 255, 255, 0.5);;
+		border-radius: 50%;
+		opacity: 1;
+		animation: wheel 2s infinite;
+		-webkit-animation: wheel 2s infinite;
+	}
+}
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 30px;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 30px;
+	}
+}
+
+
+.custom-radial-gradient {
+  background-image: radial-gradient(circle, #6b7280 100%,#4b5563 0% ,#4b5563 0%);
+}
+
+
+
+@keyframes slideRight-first {
+  from {
+    left: -100%;
+   }
+  to {
+    left: 100%; /* Adjust this value based on your layout */
+   }
+}
+@keyframes slideRight-second {
+  from {
+    left: -50%;
+   }
+  to {
+    left: 100%; /* Adjust this value based on your layout */
+   }
+}
+@keyframes slideRight-thrid {
+  from {
+    left: 0%;
+   }
+  to {
+    left: 100%; /* Adjust this value based on your layout */
+   }
+}
+
+
+ 
+
+.margin-top{
+  margin-top:30px !important;
+
+}
+
+
+ 
+.ani-div-first {
+  animation: slideRight-first 5s linear infinite;
+}
+.ani-div-second {
+  animation: slideRight-second 5s linear infinite;
+}
+
+.ani-div-third {
+  animation: slideRight-thrid 5s linear infinite;
+}
+
+/* Final state */
+.blogs {
+   opacity: 0;
+     transition: opacity 0.5s ease-out;
+
+}
+/* Final state */
+.blogs.in-view {
+   opacity: 1;
+     transition: opacity 0.5s ease-out;
+
+}
+
+ .contact {
+
+   transition: opacity 1s ease-out;
+  opacity: 0; /* To enhance the effect */
+}
+.contact.in-view {
+  transform: scale(1);
+  opacity: 1;
+}
+ 
+
+/* When the class 'show' is added, the navbar slides into view */
+ 
+@keyframes slideFromTop{
+  from {
+    transform: translateY(-100%);
+   }
+  to {
+    transform: translateY(0%); /* Adjust this value based on your layout */
+   }
+}
+
+.navbar {
+  transform: translateY(-100%); /* Start off-screen above the viewport */
+  transition: transform 0.5s ease-out;
+  opacity: 0; /* To enhance the effect */
+}
+
+/* Final state */
+.navbar.in-view {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.home-left {
+  transform: translateY(-20%); /* Start off-screen above the viewport */
+  transition: transform 0.5s ease-out;
+  opacity: 0; /* To enhance the effect */
+}
+
+/* Final state */
+.home-left.in-view {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.about-us{
+  opacity: 0; /* To enhance the effect */
+  transition: opacity 0.5s ease-out;
+}
+
+.about-us.in-view{
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.photo::before{
+  transform: translateX(0%); /* Start off-screen above the viewport */
+  transition: transform 0.5s ease-out;
+  opacity: 0; /* To enhance the effect */
+
+}
+
+ .photo.in-view::before {
+      transform: translate(20px, 20px);
+          opacity: 1;
+        }
+.projects {
+  transform: scale(0);
+  transition: transform 0.3s ease-out;
+  opacity: 0; /* To enhance the effect */
+}
+.job-description {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.job-description.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Final state */
+.projects.in-view {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.overflow-hidden-container {
+  overflow: hidden; /* This will clip any content that overflows the container's bounds */
+}
