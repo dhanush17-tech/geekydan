@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Contact from "../components/contactMe";
 import BlurredBackground from "../components/blurredBack";
@@ -25,6 +25,22 @@ export const getStaticProps = async () => {
 type MainProps = {
   posts: PostMetadata[];
 };
+
+declare global {
+  interface Window {
+    dataLayer: any[];
+    gtag: (...args: any[]) => void;
+  }
+}
+
+useEffect(() => {
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () {
+    window.dataLayer.push(arguments);
+  };
+  window.gtag("js", new Date());
+  window.gtag("config", "<GA-id>");
+}, []);
 
 const Main = ({ posts }: MainProps) => {
   return (
