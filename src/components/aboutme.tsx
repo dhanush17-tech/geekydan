@@ -39,10 +39,10 @@ export default function AboutMe() {
     <>
       <div
         id="aboutme"
-        className=" flex flex-col-reverse md:grid  md:grid-cols-[40%_60%] items-center justify-center md:pl-14 md:pr-24"
+        className=" mt-10 flex flex-col-reverse md:grid  md:grid-cols-[40%_60%] md:gap-10 items-center justify-center md:pl-14 md:pr-24"
       >
         <div className="flex justify-center items-center h-full pr-10 md:pr-0 ">
-          <div className="photo relative h-[40vh] w-[30vh] md:w-[50vh] md:h-[55vh] mt-5 md:mt-0 self-center text-center rounded-lg border-7 border-blue bg-white before:before-absolute before:rounded-lg before:border-blue before:border-[5px] object-cover">
+          <div className="photo relative left-[5%] md:left-0  h-[40vh] w-[30vh] md:w-[50vh] md:h-[55vh] mt-5 md:mt-0 self-center text-center rounded-lg border-7 border-blue bg-white before:before-absolute before:rounded-lg before:border-blue before:border-[5px] object-cover">
             <Image
               fill={true}
               className="h-full w-full rounded-lg object-cover border-[5px] border-blue after::shadow-xl"
@@ -69,11 +69,11 @@ export default function AboutMe() {
                 diving into mobile app development. My toolbox is packed with
                 cool stuff like Flutter, Node.js, Redis, and more... <br />
                 <br />
-                I've also had some awesome times speaking like{" "}
+                I've also had some awesome times speaking at{" "}
                 <a
                   aria-label="Google IO Extended"
                   href="https://gdg.community.dev/gdg-coimbatore/"
-                  className="text-blue px-1"
+                  className="text-blue "
                 >
                   Google IO Extended 2022
                 </a>

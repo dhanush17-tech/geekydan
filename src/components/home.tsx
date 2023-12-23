@@ -113,7 +113,7 @@ export default function HomePage() {
       </div>
 
       {/* Main content grid */}
-      <div className="relative  grid grid-cols-1 md:grid-cols-2 items-center h-full w-full px-10 md:px-32">
+      <div className="relative top-[-5%]  grid grid-cols-1 md:grid-cols-2 items-center h-full w-full px-10 md:px-32">
         {/* Left Column for Content */}
         <div className=" home-left flex flex-col justify-center space-y-5 ">
           {/* Content */}
@@ -149,7 +149,7 @@ export default function HomePage() {
           <p className="text-xl md:text-2xl  text-blue ">Hello there 👋</p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl   text-white leading-none my-4">
             I'm{" "}
-            <span className="relative before:absolute before:inset-x-0 before:bottom-0 leading-none md:before:bottom-2 lg:before:bottom-2  before:block before:w-[100%] before:h-[14px] before:bg-blue before:bg-opacity-60">
+            <span className="relative font-[600] before:absolute before:inset-x-0 before:bottom-0 leading-none md:before:bottom-2 lg:before:bottom-2  before:block before:w-[100%] before:h-[14px] before:bg-blue before:bg-opacity-60">
               Dhanush
             </span>
           </h1>
@@ -199,7 +199,7 @@ export default function HomePage() {
             />
           </div>
         </div>
-        <div className="visible md:collapse border-white absolute mouse translate-x-[50%] "></div>
+        <div className="visible md:collapse border-white absolute mouse translate-x-[50%]   "></div>
       </div>
     </section>
   );
