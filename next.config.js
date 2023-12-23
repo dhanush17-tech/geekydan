@@ -1,4 +1,6 @@
 module.exports = {
+  distDir: "build",
+
   darkMode: "class", // or 'media' or 'class'
   mode: "jit",
   purge: ["./src/**/*.{js,jsx,ts,tsx}"],

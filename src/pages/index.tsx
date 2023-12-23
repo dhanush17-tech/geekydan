@@ -10,6 +10,7 @@ import MyProjects from "../components/projects";
 import Mentorship from "../components/mentorship";
 import Blogs from "../components/blogs";
 import { PostMetadata } from "../../blogMethods/blogType";
+import Head from "next/head";
 
 export const getStaticProps = async () => {
   const { getPostMetadata } = await import("../../blogMethods/readFile");
@@ -26,26 +27,10 @@ type MainProps = {
   posts: PostMetadata[];
 };
 
-declare global {
-  interface Window {
-    dataLayer: any[];
-    gtag: (...args: any[]) => void;
-  }
-}
-
-useEffect(() => {
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = function () {
-    window.dataLayer.push(arguments);
-  };
-  window.gtag("js", new Date());
-  window.gtag("config", "G-EW1YXYND70");
-}, []);
-
 const Main = ({ posts }: MainProps) => {
   return (
     <div className="flex flex-col min-h-screen">
-      <Helmet>
+      <Head>
         <title>Dhanush Vardhan</title>
         <meta
           name="description"
@@ -56,8 +41,23 @@ const Main = ({ posts }: MainProps) => {
           content="Dhanush Vardhan, Mobile App Development, Hackathon, Programming, Technology, Learning, Networking"
         />
         <link rel="canonical" href="http://www.yourdomain.com/" />
-      </Helmet>
-
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-EW1YXYND70"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-EW1YXYND70', {
+            page_path: window.location.pathname,
+          });
+        `,
+          }}
+        />
+      </Head>
       <main className="flex-grow">
         <BlurredBackground />
         <div className="flex-grow z-10 relative">
