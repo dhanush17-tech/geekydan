@@ -1,15 +1,15 @@
-// Assuming Main is in a file like components/Main.tsx
+import React from "react";
+import { Helmet } from "react-helmet";
+import Contact from "../components/contactMe";
+import BlurredBackground from "../components/blurredBack";
+import HomePage from "../components/home";
 
 import AboutMe from "../components/aboutme";
 import Experience from "../components/experience";
 import MyProjects from "../components/projects";
-import HomePage from "../components/home";
-import BlurredBackground from "../components/blurredBack";
 import Mentorship from "../components/mentorship";
-import Contact from "../components/contactMe";
-import { PostMetadata } from "../../blogMethods/blogType"; // Adjust the import path as necessary
 import Blogs from "../components/blogs";
-import { GetServerSideProps } from "next";
+import { PostMetadata } from "../../blogMethods/blogType";
 
 export const getStaticProps = async () => {
   const { getPostMetadata } = await import("../../blogMethods/readFile");
@@ -29,6 +29,19 @@ type MainProps = {
 const Main = ({ posts }: MainProps) => {
   return (
     <div className="flex flex-col min-h-screen">
+      <Helmet>
+        <title>Dhanush Vardhan</title>
+        <meta
+          name="description"
+          content="Dhanush Vardhan - Mobile App Developer, 5+ Hackathon Winner, and Tech Enthusiast. Discover my journey in programming, networking, and continuous learning."
+        />
+        <meta
+          name="keywords"
+          content="Dhanush Vardhan, Mobile App Development, Hackathon, Programming, Technology, Learning, Networking"
+        />
+        <link rel="canonical" href="http://www.yourdomain.com/" />
+      </Helmet>
+
       <main className="flex-grow">
         <BlurredBackground />
         <div className="flex-grow z-10 relative">

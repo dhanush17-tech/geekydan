@@ -59,38 +59,55 @@ export default function HomePage() {
         <div className="absolute left-[calc(50%+26rem)] top-[-25%] h-[150%] w-px rotate-12 bg-white/5"></div>
         <div className="absolute right-[calc(50%+26rem)] top-[-25%] h-[150%] w-px rotate-12 bg-white/5"></div>
       </div>
-      <div className="hidden md:flex flex-col items-center absolute left-5 bottom-5 space-y-8">
+      <div className="hidden md:flex flex-col items-center absolute left-5 bottom-5 space-y-8 z-20">
         {/* Social Icons Column */}
-        <Link href={"https://github.com/dhanush17-tech"}>
-          <FontAwesomeIcon
-            aria-label="Dhanush Vardhan Github"
-            icon={faGithub}
-            className="text-white/50 text-2xl"
-          />{" "}
+        <Link
+          target="_blank"
+          href="https://github.com/dhanush17-tech"
+          legacyBehavior
+        >
+          <a aria-label="Dhanush Vardhan Github">
+            <FontAwesomeIcon
+              icon={faGithub}
+              className="text-white/50 text-2xl"
+            />
+          </a>
         </Link>
-        <Link href={"https://www.linkedin.com/in/dhanush-vardhan-30bb881b0/"}>
-          {" "}
-          <FontAwesomeIcon
-            aria-label="Dhanush Vardhan LinkedIn"
-            icon={faLinkedin}
-            className="text-white/50 text-2xl"
-          />{" "}
+        <Link
+          target="_blank"
+          href="https://www.linkedin.com/in/dhanush-vardhan-30bb881b0/"
+          legacyBehavior
+        >
+          <a aria-label="Dhanush Vardhan LinkedIn">
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="text-white/50 text-2xl"
+            />
+          </a>
         </Link>
-        <Link href={"https://twitter.com/geeky_dan"}>
-          {" "}
-          <FontAwesomeIcon
-            aria-label="Dhanush Vardhan X Twitter"
-            icon={faXTwitter}
-            className="text-white/50 text-2xl"
-          />{" "}
+        <Link
+          target="_blank"
+          href="https://twitter.com/geeky_dan"
+          legacyBehavior
+        >
+          <a aria-label="Dhanush Vardhan Twitter">
+            <FontAwesomeIcon
+              icon={faXTwitter} // Assuming you have a Twitter icon, replace faLinkedin with faTwitter
+              className="text-white/50 text-2xl"
+            />
+          </a>
         </Link>
-        <Link href={"https://www.instagram.com/dhanu_sh.17/"}>
-          {" "}
-          <FontAwesomeIcon
-            icon={faInstagram}
-            aria-label="Dhanush Vardhan Instagram"
-            className="text-white/50 text-2xl"
-          />{" "}
+        <Link
+          target="_blank"
+          href="https://www.instagram.com/dhanu_sh.17/"
+          legacyBehavior
+        >
+          <a aria-label="Dhanush Vardhan Instagram">
+            <FontAwesomeIcon
+              icon={faInstagram}
+              className="text-white/50 text-2xl"
+            />
+          </a>
         </Link>
         <div className="w-3 bg-white/10  h-36"></div>
       </div>

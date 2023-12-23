@@ -203,3 +203,14 @@ html {
 .overflow-hidden-container {
   overflow: hidden; /* This will clip any content that overflows the container's bounds */
 }
+
+.navbar-transition {
+  transition: opacity 0.3s ease, visibility 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.navbar-visible {
+  opacity: 1;
+  visibility: visible;
+}

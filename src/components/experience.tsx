@@ -187,18 +187,16 @@ function MyExperience() {
 
       <div className=" flex flex-col justify-center items-center md:grid grid-cols-2 gap-10 mt-10 relative md:w-[90%] p-0 ">
         <Link href="https://x.com/DhravyaShah/status/1727344157839020041?s=20">
-          <div
-            className="relative aspect-video rounded-lg shadow-xl md:-rotate-1"
-           >
+          <div className="relative aspect-video rounded-lg shadow-xl md:-rotate-1">
             <img
-              src="/assets/hackathons/hackprinceton.png"
+              src="assets/hackathons/hackprinceton.png"
               className=" object-cover aspect-video inset-0 opacity-50 transition duration-300 ease-in-out rounded-lg"
-              alt="Winner at HackPrinceton"
+              alt=""
             />
             <div className="absolute top-5 left-5 right-5 h-full">
               {" "}
               <h1 className=" text-xl text-white font-bold">
-                #1 Winner at HackPrinceton (Vibewire Track)
+                #1 Winner at Princeton (Vibewire Track)
               </h1>
               <div className="absolute flex justify-center items-center  bottom-10 right-0 rounded-full h-8 w-8  bg-white">
                 <FontAwesomeIcon icon={faPlay} className="text-blue" />
@@ -210,13 +208,10 @@ function MyExperience() {
           href={"https://x.com/DhravyaShah/status/1719719235264602256?s=20"}
         >
           {" "}
-          <div
-            className="relative aspect-video rounded-lg shadow-xl md:rotate-1"
-           
-          >
+          <div className="relative w-full h-full aspect-video rounded-lg shadow-xl md:rotate-1">
             <img
-              src="/assets/hackathons/calhacks1.png"
-              className=" object-cover aspect-video inset-0 opacity-50 transition duration-300 ease-in-out rounded-lg"
+              src="assets/hackathons/calhacks1.png"
+              className=" object-cover aspect-video inset-0 opacity-50 transition duration-300 ease-in-out rounded-lg "
               alt="Winner at CalHacks"
             />
             <div className="absolute top-5 left-5 right-5 h-full">
@@ -232,12 +227,9 @@ function MyExperience() {
         </Link>
         <Link href={"https://devpost.com/software/flow-tz1nhp"}>
           {" "}
-          <div
-            className="relative aspect-video rounded-lg shadow-xl md:-rotate-1"
-           >
+          <div className="relative aspect-video rounded-lg shadow-xl md:-rotate-1">
             <img
-              
-              src="/assets/hackathons/masseyhacks.png"
+              src="assets/hackathons/masseyhacks.png"
               className=" object-cover aspect-video inset-0 opacity-50 transition duration-300 ease-in-out rounded-lg"
               alt="Winner at Massey Hacks"
             />
@@ -257,11 +249,9 @@ function MyExperience() {
             "https://www.linkedin.com/posts/dhanush-vardhan-30bb881b0_hackathons-pinnacle-activity-6819683743624642560-d2ga?utm_source=share&utm_medium=member_desktop"
           }
         >
-          <div
-            className="relative aspect-video rounded-lg shadow-xl md:rotate-1"
-           >
+          <div className="relative aspect-video rounded-lg shadow-xl md:rotate-1">
             <img
-              src="/assets/hackathons/pinnacle.png"
+              src="assets/hackathons/pinnacle.png"
               className=" object-cover aspect-video inset-0 opacity-50 transition duration-300 ease-in-out rounded-lg"
               alt="Participant Pinnacle 2023"
             />
