@@ -37,10 +37,10 @@ export default function NavBar() {
 
   return (
     <nav className=" navbar relative flex px-5 my-5 md:px-10 md:my-8 justify-between items-center z-10  w-full ">
-      <Link href="" className="flex   ">
+      <div  className="flex   ">
         {/* <img src="assets/nav_logo.png" className="h-5 md:h-8 pl-2" alt="Logo" /> */}
         <h1 className="text-3xl lg:text-4xl font-[600]  text-blue">{"<DV/>"}</h1>
-      </Link>{" "}
+      </div>{" "}
       <button
         data-collapse-toggle="navbar-default"
         type="button"
