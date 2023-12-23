@@ -45,7 +45,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <link rel="canonical" href="http://www.geekydan.dev/" />
       </Head>
-      <Analytics />
       <div
         className={`relative min-h-screen bg-backgroundColor ${rubik.style}`}
       >
@@ -60,6 +59,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         {/* Other components like NavBar, Footer, etc. */}
         {/* Make sure they have a higher z-index if needed */}
       </div>
+      <Analytics />
     </>
   );
 }
