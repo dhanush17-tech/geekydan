@@ -43,7 +43,7 @@ export default function HomePage() {
   }, []); // Empty dependency array ensures this runs once after the initial render
 
   return (
-    <section className="w-screen h-screen flex flex-col items-center z-20 relative overflow-hidden antialiased">
+    <section className="w-screen h-[100dvh] flex flex-col items-center z-20 relative overflow-hidden antialiased">
       <NavBar />
       {/* <BackgroundBeams /> */}
 
