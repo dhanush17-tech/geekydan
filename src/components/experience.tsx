@@ -23,7 +23,7 @@ export default function Experience() {
         "NodeJS",
         "Express",
         "MongoDB",
-        "Pyhton",
+        "Python",
         "Java",
         "Git",
         "Dart",
