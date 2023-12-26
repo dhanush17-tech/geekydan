@@ -6,11 +6,11 @@
 
 .typewriter-cursor {
   display: inline-block;
-  width: 1ch; /* Represents the width of the character */
+  width: 3px; /* Represents the width of the character */
   border-right: 2px solid transparent;
   animation: blinkCursor 1s steps(2, start) infinite;
 }
 
 @keyframes blinkCursor {
-  50% { border-color: transparent; }
+  50% { border-color: transparent; opacity: .2}
 }
