@@ -57,7 +57,7 @@ export default function Footer() {
           <Link href={"https://github.com/dhanush17-tech"}>
             <FontAwesomeIcon
               icon={faGithub}
-              className="text-slate-400 text-xl"
+              className="text-slate-400 text-xl w-5"
             />
           </Link>
           <Link href={"https://www.linkedin.com/in/dhanush-vardhan-30bb881b0/"}>
@@ -65,7 +65,7 @@ export default function Footer() {
             <FontAwesomeIcon
               aria-label="Dhanush Vardhan LinkedIn"
               icon={faLinkedin}
-              className="text-slate-400 text-xl"
+              className="text-slate-400 text-xl w-5"
             />
           </Link>{" "}
           <Link href={"https://twitter.com/geeky_dan"}>
@@ -73,7 +73,7 @@ export default function Footer() {
             <FontAwesomeIcon
               aria-label="Dhanush Vardhan X Twitter"
               icon={faXTwitter}
-              className="text-slate-400 text-xl"
+            className="text-slate-400 text-xl  w-5"
             />{" "}
           </Link>
           <Link href={"https://www.instagram.com/dhanu_sh.17/"}>
@@ -81,7 +81,7 @@ export default function Footer() {
             <FontAwesomeIcon
               aria-label="Dhanush Vardhan Instagram"
               icon={faInstagram}
-              className="text-slate-400 text-xl"
+              className="text-slate-400 w-5"
             />
           </Link>
         </div>

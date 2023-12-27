@@ -93,7 +93,7 @@ const PostPage: React.FC<PostPageProps> = ({ post }) => {
               </li>
               {/* Share */}
               <li>
-                <Link href={ "https://twitter.com/geeky_dan"}>
+                <Link href={"https://twitter.com/geeky_dan"}>
                   {" "}
                   <FontAwesomeIcon
                     icon={faXTwitter}

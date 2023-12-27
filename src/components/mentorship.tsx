@@ -110,12 +110,12 @@ const ExperienceCard = ({
   link,
 }: MentorshipType) => {
   return (
-    <Link key={title+organization} href={link}>
+    <Link key={title + organization} href={link}>
       <div className="  projects bg-[#1E293B] shadow-lg rounded-lg p-6 text-white">
         <div className="flex items-start justify-between">
           <FontAwesomeIcon
             icon={faArrowUpRightFromSquare}
-            className="text-4xl text-blue"
+            className="text-4xl text-blue w-10"
           />{" "}
           <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600">
             <span className="icon">🔗</span> {/* Replace with actual icon */}

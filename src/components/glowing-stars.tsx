@@ -21,10 +21,7 @@ export const GlowingStarsBackgroundCard = ({
       onMouseLeave={() => {
         setMouseEnter(false);
       }}
-      className={cn(
-        "  h-full w-full absolute ",
-        className
-      )}
+      className={cn("  h-full w-full absolute ", className)}
     >
       <div className="flex justify-center items-center">
         <Illustration mouseEnter={mouseEnter} />

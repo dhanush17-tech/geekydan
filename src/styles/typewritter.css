@@ -12,5 +12,5 @@
 }
 
 @keyframes blinkCursor {
-  50% { border-color: transparent; opacity: .2}
+  50% { border-color: transparent; opacity: 0}
 }

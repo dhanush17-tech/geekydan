@@ -144,9 +144,9 @@ function MyExperience() {
             {/* List items */}
             {activeTab === "UFF" ? (
               <>
-                <li className="flex items-start gap-2">
+                <li className="flex flex-row items-start gap-2 ">
                   <FontAwesomeIcon
-                    className="text-blue text-[15px] mt-1"
+                    className="text-blue   text-[15px] mt-1 w-12  "
                     icon={faAnglesRight}
                   />
                   <span>
@@ -157,7 +157,7 @@ function MyExperience() {
                 </li>
                 <li className="flex items-start gap-2 mt-5">
                   <FontAwesomeIcon
-                    className="text-blue text-[15px] mt-1"
+                    className="text-blue w-[1.7rem] text-[15px] mt-1  "
                     icon={faAnglesRight}
                   />
                   <span>
@@ -169,7 +169,7 @@ function MyExperience() {
             ) : (
               <li className="flex items-start gap-2">
                 <FontAwesomeIcon
-                  className="text-blue text-[15px] mt-1"
+                  className="text-blue text-[15px] mt-1 w-[4.7rem]  "
                   icon={faAnglesRight}
                 />
                 <span>
@@ -199,7 +199,7 @@ function MyExperience() {
                 #1 Winner at Princeton (Vibewire Track)
               </h1>
               <div className="absolute flex justify-center items-center  bottom-10 right-0 rounded-full h-8 w-8  bg-white">
-                <FontAwesomeIcon icon={faPlay} className="text-blue" />
+                <FontAwesomeIcon icon={faPlay} className="text-blue w-3  " />
               </div>
             </div>
           </div>{" "}
@@ -220,7 +220,7 @@ function MyExperience() {
                 #3 Winner at Calhacks (MindsDB)
               </h1>
               <div className="absolute flex justify-center items-center  bottom-10 right-0 rounded-full h-8 w-8  bg-white">
-                <FontAwesomeIcon icon={faPlay} className="text-blue" />
+                <FontAwesomeIcon icon={faPlay} className="text-blue  w-3  " />
               </div>
             </div>
           </div>
@@ -239,7 +239,7 @@ function MyExperience() {
                 #1 Winner at Massey Hacks
               </h1>
               <div className="absolute flex justify-center items-center  bottom-10 right-0 rounded-full h-8 w-8  bg-white">
-                <FontAwesomeIcon icon={faPlay} className="text-blue" />
+                <FontAwesomeIcon icon={faPlay} className="text-blue  w-3  " />
               </div>
             </div>
           </div>{" "}
@@ -261,7 +261,7 @@ function MyExperience() {
                 Invited to Pinnacle (Olympics of Hackathons)
               </h1>
               <div className="absolute flex justify-center items-center  bottom-10 right-0 rounded-full h-8 w-8  bg-white">
-                <FontAwesomeIcon icon={faPlay} className="text-blue" />
+                <FontAwesomeIcon icon={faPlay} className="text-blue w-3   " />
               </div>
             </div>
           </div>{" "}

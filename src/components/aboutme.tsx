@@ -110,45 +110,45 @@ export default function AboutMe() {
                 In a nutshell, I'm all about building neat apps, sharing tech
                 insights, and always up for a good coding challenge!{" "}
               </p>
-              <ul className=" hidden text-white text-lg mt-5 md:grid grid-cols-2  w-[100%] self-center  md:w-[100%]">
-                <li>
+              <ul className=" hidden text-white text-lg mt-5 md:grid grid-cols-2 gap-5 w-[100%] self-center  md:w-[100%]">
+                <li className="flex flex-row h-5 justify-center w-min align-center">
                   <FontAwesomeIcon
-                    className="text-blue text-lg"
+                    className="text-blue pt-1"
                     icon={faAnglesRight}
                   />
-                  <span className="pl-2 ">Flutter</span>
+                  <span className="pl-2 text-center ">Flutter</span>
                 </li>
-                <li>
+                <li className="flex flex-row h-5  justify-center w-min align-center">
                   <FontAwesomeIcon
-                    className="text-blue text-lg"
+                    className="text-blue pt-1"
                     icon={faAnglesRight}
                   />
                   <span className="pl-2">Kotlin</span>
                 </li>{" "}
-                <li>
+                <li className="flex flex-row h-5  justify-center w-min align-center">
                   <FontAwesomeIcon
-                    className="text-blue text-lg"
+                    className="text-blue pt-1"
                     icon={faAnglesRight}
                   />
                   <span className="pl-2">NodeJS</span>
                 </li>{" "}
-                <li>
+                <li className="flex flex-row h-5  justify-center w-min align-center">
                   <FontAwesomeIcon
-                    className="text-blue text-lg"
+                    className="text-blue pt-1"
                     icon={faAnglesRight}
                   />
                   <span className="pl-2">Redis</span>
                 </li>{" "}
-                <li>
+                <li className="flex flex-row h-5  justify-center w-min align-center">
                   <FontAwesomeIcon
-                    className="text-blue text-lg"
+                    className="text-blue pt-1"
                     icon={faAnglesRight}
                   />
                   <span className="pl-2">MySQL</span>
                 </li>
-                <li>
+                <li className="flex flex-row h-5  justify-center w-min align-center">
                   <FontAwesomeIcon
-                    className="text-blue text-lg"
+                    className="text-blue pt-1 "
                     icon={faAnglesRight}
                   />
                   <span className="pl-2 pr-[13%] md:pr-0">Postgres</span>
