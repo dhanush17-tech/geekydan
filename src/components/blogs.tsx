@@ -64,7 +64,7 @@ export function BlogList({ posts }: { posts: PostMetadata[] }) {
     <div className="space-y-10 mt-10">
       {posts.map((post, index) => (
         <div
-          key={post.imgUrl + index + index}
+          key={post.imgUrl+ index + index}
           className="flex flex-col space-y-5"
         >
           <BlogCard key={post.imgUrl + index} post={post} />
@@ -84,7 +84,7 @@ export function BlogCard({ post }: { post: PostMetadata }) {
     <Link key={post.slug + post.title} href={`/blogs/${post.slug}`}>
       <div className="blogs flex flex-row md:flex-row md:items-center w-full rounded-lg overflow-hidden ">
         <div className="max-w-[100px]"></div>
-        <img
+        <Image
           width={100}
           height={100}
           src={post.imgUrl}

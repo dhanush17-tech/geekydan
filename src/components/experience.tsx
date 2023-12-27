@@ -169,7 +169,7 @@ function MyExperience() {
             ) : (
               <li className="flex items-start gap-2">
                 <FontAwesomeIcon
-                  className="text-blue text-[15px] mt-1 w-[4.7rem]  "
+                  className="text-blue text-[15px] mt-1 w-[12.7rem]  "
                   icon={faAnglesRight}
                 />
                 <span>
@@ -191,7 +191,7 @@ function MyExperience() {
             <img
               src="assets/hackathons/hackprinceton.png"
               className=" object-cover aspect-video inset-0 opacity-50 transition duration-300 ease-in-out rounded-lg"
-              alt=""
+              alt="Winner of HackPrinceton "
             />
             <div className="absolute top-5 left-5 right-5 h-full">
               {" "}
@@ -212,7 +212,7 @@ function MyExperience() {
             <img
               src="assets/hackathons/calhacks1.png"
               className=" object-cover aspect-video inset-0 opacity-50 transition duration-300 ease-in-out rounded-lg "
-              alt="Winner at CalHacks"
+              alt="Winner of CalHacks"
             />
             <div className="absolute top-5 left-5 right-5 h-full">
               {" "}
@@ -231,7 +231,7 @@ function MyExperience() {
             <img
               src="assets/hackathons/masseyhacks.png"
               className=" object-cover aspect-video inset-0 opacity-50 transition duration-300 ease-in-out rounded-lg"
-              alt="Winner at Massey Hacks"
+              alt="Winner of Massey Hacks"
             />
             <div className="absolute top-5 left-5 right-5 h-full">
               {" "}

@@ -53,11 +53,11 @@ const Main = ({ posts }: MainProps) => {
           />
           <meta
             name="description"
-            content="Dhanush Vardhan - Mobile App Developer, 5+ Hackathon Winner, and Tech Enthusiast. Discover my journey in programming, networking, and continuous learning."
+            content="18 y/o self taught dev • full time indie hacker 👨‍💻 • building http://shopwise.tech  •  freelancer(helping startups soar) 🚀🚀"
           />
           <meta
             name="keywords"
-            content="Dhanush Vardhan, Mobile App Development, Hackathon, Programming, Technology, Learning, Networking"
+            content="18 y/o self taught dev • full time indie hacker 👨‍💻 • building http://shopwise.tech  •  freelancer(helping startups soar) 🚀🚀  •  flutter developer  • mobile app developer  • software developer "
           />
           <link rel="canonical" href="http://www.geekydan.dev/" />
           <script

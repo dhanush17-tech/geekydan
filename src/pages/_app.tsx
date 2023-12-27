@@ -23,27 +23,34 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       {" "}
       <Head>
-        <title>Dhanush Vardhan</title>{" "}
+        <meta charSet="utf-8" />
+        <title>Dhanush Vardhan</title>
+        <meta
+          name="description"
+          content="18 y/o self taught dev • full time indie hacker 👨‍💻 • building http://shopwise.tech  •  freelancer(helping startups soar) 🚀🚀"
+        />
+        <meta property="og:title" content="Dhanush Vardhan" />
+        <meta
+          property="og:description"
+          content="18 y/o self taught dev • full time indie hacker 👨‍💻 • building http://shopwise.tech  •  freelancer(helping startups soar) 🚀🚀"
+        />
+        <meta
+          property="og:image"
+          content="https://pbs.twimg.com/profile_banners/1701794897270042624/1694578174/1500x500"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@geeky_dan" />
         <meta name="twitter:title" content="Dhanush Vardhan" />
         <meta
           name="twitter:description"
-          content="18 y/o self taught flutter dev • full time indie hacker 👨‍💻•  freelancer(helping startups soar) 🚀🚀."
+          content="18 y/o self taught dev • full time indie hacker 👨‍💻 • building http://shopwise.tech  •  freelancer(helping startups soar) 🚀🚀"
         />
         <meta
           name="twitter:image"
-          content="https://www.geekydan.dev/assets/memoji.png"
-        />
-        <meta
-          name="description"
-          content="Dhanush Vardhan - Mobile App Developer, 5+ Hackathon Winner, and Tech Enthusiast. Discover my journey in programming, networking, and continuous learning."
-        />
-        <meta
-          name="keywords"
-          content="Dhanush Vardhan, Mobile App Development, Hackathon, Programming, Technology, Learning, Networking"
+          content="https://pbs.twimg.com/profile_banners/1701794897270042624/1694578174/1500x500"
         />
         <link rel="canonical" href="http://www.geekydan.dev/" />
+        <link rel="icon" href="/assets/memoji.png" type="image/png" />
       </Head>
       <div
         className={`relative min-h-screen bg-backgroundColor ${rubik.style}`}

@@ -156,7 +156,8 @@ function ProjectList() {
                   </div>
                 </div>
                 <p className="text-gray-400 text-sm font-normal">
-                  Monitor your heart arrythemias right from your home using AI!
+                 
+                  An app that predicts crypto and analyzes prices using AI 🤑 💸!
                 </p>
               </div>
             </div>
@@ -218,7 +219,7 @@ function ProjectList() {
             <div className="absolute flex flex-col justify-end p-4 bottom-0 left-0 right-0">
               <div className="flex flex-row justify-between">
                 <h2 className="text-xl font-sans font-[500] text-blue ">
-                  Blik
+                  HeartPal
                 </h2>
                 <div className="flex flex-row space-x-5">
                   <Link href={"https://github.com/orgs/HeartPal/repositories"}>
@@ -241,7 +242,7 @@ function ProjectList() {
                 </div>
               </div>
               <p className="text-gray-400 text-sm font-normal">
-                An app that predicts crypto prices using AI 🤑 💸!
+                Monitor your heart arrythemias right from your home using AI!{" "}
               </p>
             </div>
           </div>
