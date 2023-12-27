@@ -99,13 +99,13 @@ function ProjectList() {
                 <div className="flex flex-row space-x-5">
                   <Link href="https://play.google.com/store/apps/details?id=com.priceTracker.shopwise&pcampaignid=web_share">
                     <FontAwesomeIcon
-                      className="text-blue text-[15px] mt-1"
+                      className="text-blue text-[15px] mt-1 w-3"
                       icon={faArrowUpRightFromSquare}
                     />
                   </Link>
                   <Link href="https://github.com/dhanush17-tech/Shopwise">
                     <FontAwesomeIcon
-                      className="text-blue text-[15px] mt-1"
+                      className="text-blue text-[15px] mt-1 w-3"
                       icon={faGithub}
                     />
                   </Link>
@@ -119,14 +119,14 @@ function ProjectList() {
           </div>
           {/* Add more content as needed */}
         </div>
-        <div className="flex flex-col justify-between ">
+        <div className="flex flex-col justify-between  gap-y-10">
           <div
             key={"heartpal"}
             className="projects bg-white rounded-lg shadow-xl relative md:aspect-[13/9.5]"
           >
             <div className=" rounded-lg bg-gradient-to-lr from-white to-black"></div>
             <img
-              src="/assets/projects/heartpal.png"
+              src="/assets/projects/blik.png"
               className="object-cover  md:aspect-[13/9.5] inset-0 transition duration-300 ease-in-out rounded-lg"
               alt=""
             />
@@ -134,24 +134,22 @@ function ProjectList() {
               <div className="absolute p-4 bottom-0 left-0 right-0">
                 <div className="flex flex-row justify-between">
                   <h2 className="text-xl font-sans font-[500] text-blue ">
-                    HeartPal
+                    Blik
                   </h2>
                   <div className="flex flex-row space-x-5">
                     <Link
-                      href={"https://github.com/orgs/HeartPal/repositories"}
-                    >
-                      <FontAwesomeIcon
-                        className="text-blue text-[15px] mt-1"
-                        icon={faGithub}
-                      />
-                    </Link>
-                    <Link
                       href={
-                        "https://devpost.com/software/ai-heart-arrhythmia-detection"
+                        "https://github.com/orgs/CalHacks-Blik/repositories"
                       }
                     >
                       <FontAwesomeIcon
-                        className="text-blue text-[15px] mt-1"
+                        className="text-blue text-[15px] mt-1 w-3"
+                        icon={faGithub}
+                      />
+                    </Link>
+                    <Link href={"https://devpost.com/software/blik"}>
+                      <FontAwesomeIcon
+                        className="text-blue text-[15px] mt-1 w-3"
                         icon={faArrowUpRightFromSquare}
                       />
                     </Link>{" "}
@@ -184,13 +182,13 @@ function ProjectList() {
                   <div className="flex flex-row space-x-5">
                     <Link href={"https://devpost.com/software/healthpal"}>
                       <FontAwesomeIcon
-                        className="text-blue text-[15px] mt-1"
+                        className="text-blue text-[15px] mt-1 w-3"
                         icon={faGithub}
                       />
                     </Link>
                     <Link href={"https://github.com/dhanush17-tech/MedicOn"}>
                       <FontAwesomeIcon
-                        className="text-blue text-[15px] mt-1"
+                        className="text-blue text-[15px] mt-1 w-3"
                         icon={faArrowUpRightFromSquare}
                       />
                     </Link>{" "}
@@ -212,7 +210,7 @@ function ProjectList() {
         >
           <div className=" rounded-lg bg-gradient-to-lr from-white to-black"></div>
           <img
-            src="/assets/projects/blik.png"
+            src="/assets/projects/heartpal.png"
             className="object-cover  md:aspect-[13/6] inset-0 transition w-full duration-300 ease-in-out rounded-lg"
             alt=""
           />
@@ -223,18 +221,20 @@ function ProjectList() {
                   Blik
                 </h2>
                 <div className="flex flex-row space-x-5">
-                  <Link
-                    href={"https://github.com/orgs/CalHacks-Blik/repositories"}
-                  >
+                  <Link href={"https://github.com/orgs/HeartPal/repositories"}>
                     <FontAwesomeIcon
-                      className="text-blue text-[15px] mt-1"
+                      className="text-blue text-[15px] mt-1 w-3"
                       icon={faGithub}
                     />
                   </Link>{" "}
-                  <Link href={"https://devpost.com/software/blik"}>
+                  <Link
+                    href={
+                      "https://devpost.com/software/ai-heart-arrhythmia-detection"
+                    }
+                  >
                     {" "}
                     <FontAwesomeIcon
-                      className="text-blue text-[15px] mt-1"
+                      className="text-blue text-[15px] mt-1 w-3"
                       icon={faArrowUpRightFromSquare}
                     />
                   </Link>
@@ -266,13 +266,13 @@ function ProjectList() {
               <div className="flex flex-row space-x-5 ">
                 <Link href={"https://github.com/EdComposer"}>
                   <FontAwesomeIcon
-                    className="text-blue text-[15px] mt-1"
+                    className="text-blue text-[15px] mt-1 w-3"
                     icon={faGithub}
                   />
                 </Link>
                 <Link href={"https://devpost.com/software/edcomposer"}>
                   <FontAwesomeIcon
-                    className="text-blue text-[15px] mt-1"
+                    className="text-blue text-[15px] mt-1 w-3"
                     icon={faArrowUpRightFromSquare}
                   />
                 </Link>
