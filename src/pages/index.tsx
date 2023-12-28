@@ -77,16 +77,17 @@ const Main = ({ posts }: MainProps) => {
             }}
           />
         </Head>
-        <main className="flex-grow">
+        <main className="flex-grow ">
           <BlurredBackground />
-          <div className="flex-grow z-10 relative">
-            <HomePage />
-            <AboutMe />
-            <Experience />
-            <MyProjects />
-            <Blogs posts={posts} />
-            <Mentorship />
-            <Contact />
+          <div className="flex-col z-10 relative mx-auto justify-center items-center max-w-[1572px]">
+               <HomePage />
+              <AboutMe />
+              <Experience />
+              <MyProjects />
+              <Blogs posts={posts} />
+              <Mentorship />
+              <Contact />
+           
           </div>
         </main>
       </div>

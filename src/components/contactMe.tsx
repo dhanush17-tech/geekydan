@@ -38,7 +38,7 @@ export default function Contact() {
 
   return (
     <>
-      <div id="contact" className="  contact w-screen relative items-start justify-center px-10 mt-4 md:mt-20 mb-10 md:px-36 space-y-5  overflow-hidden-container ">
+      <div id="contact" className="  contact relative items-start justify-center px-10 mt-4 md:mt-20 mb-10 md:px-36 space-y-5  overflow-hidden-container ">
         <BackgroundBeams className="absolute h-screen w-screen" />
         <Link href="mailto:dhanush.kalaiselvan@gmail.com">
         

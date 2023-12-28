@@ -45,7 +45,7 @@ export default function AboutMe() {
           <div className="photo relative left-[5%] md:left-0  h-[40vh] w-[30vh] md:w-[50vh] md:h-[55vh] mt-5 md:mt-0 self-center text-center rounded-lg border-7 border-blue bg-white before:before-absolute before:rounded-lg before:border-blue before:border-[5px] object-cover">
             <Image
               fill={true}
-              className="h-full w-full rounded-lg object-cover border-[5px] border-blue after::shadow-xl"
+              className=" w-full rounded-lg object-cover border-[5px] border-blue after::shadow-xl"
               src="/assets/me.jpg"
               alt="Photo of Dhanush Vardhan"
             />

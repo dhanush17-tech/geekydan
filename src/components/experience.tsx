@@ -7,7 +7,6 @@ import Image from "next/image";
 
 export default function Experience() {
   const containerRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
     // Only attempt to use TagCloud if the ref is current
     if (containerRef.current) {
@@ -29,6 +28,9 @@ export default function Experience() {
         "Dart",
         "Compose",
         "FastAPI",
+        "Flutter",
+        "Firebase",
+        "JavaScript",
         "MySQL",
         "Kotlin",
         "Redis",
@@ -44,13 +46,29 @@ export default function Experience() {
         "Compose",
         "FastAPI",
       ];
+
       const size = containerRef.current.offsetWidth;
-      const radius = size / 1.6; // or any other factor that fits your design
+      const radius = size / 2.5; // or any other factor that fits your design
 
       const options = {
         radius: radius,
-      }; // Define any options you want for the TagCloud
+        // ... (any other options you want to include)
+      };
+
+      // Initialize TagCloud here
       TagCloud(containerRef.current, texts, options);
+
+      // Return a cleanup function
+      return () => {
+        // Clean up the TagCloud instance
+        // This assumes TagCloud does not provide a dedicated cleanup method
+        // and depends on removing all child nodes from the container
+        if (containerRef.current) {
+          while (containerRef.current.firstChild) {
+            containerRef.current.removeChild(containerRef.current.firstChild);
+          }
+        }
+      };
     }
   }, []); // Empty dependency array means this effect will only run once after initial render
 
@@ -61,7 +79,7 @@ export default function Experience() {
           <div className="">
             {"  "}
             {/* Adjust max width as needed */}
-            <div className="flex justify-start space-x-5 md:w-[85%]">
+            <div className="flex-grow justify-start space-x-5 md:w-[85%]">
               <h1 className="text-2xl  md:text-md lg:text-4xl text-white flex  ">
                 {"02.  "}
                 <span className="text-blue ml-2"> My Experience </span>
@@ -73,10 +91,7 @@ export default function Experience() {
             </div>
           </div>
         </div>
-        <div
-          className="hidden md:flex justify-center items-center  text-blue md:pr-0"
-          ref={containerRef}
-        ></div>
+        <div className="hidden md:flex h-20  text-blue md:pr-0" ref={containerRef}></div>
         {/* Right column contents */}
       </div>
     </>

@@ -16,7 +16,7 @@ export default function MyProjects() {
       {hasMounted && (
         <>
           {" "}
-          <div className="   w-screen items-start justify-center  px-10  my-24 md:px-24">
+          <div className="  items-start justify-center  px-10  my-24 md:px-24">
             <div className="">
               {"  "}
               {/* Adjust max width as needed */}
@@ -30,7 +30,7 @@ export default function MyProjects() {
                 </h1>
                 <div className="h-[3px] bg-gradient-to-tr from-slate-600 to-transparent w-[30%] self-center"></div>
               </div>
-              <div className="flex flex-col w-full   items-center justify-center text-white text-md mt-5 font-normal md:mt-10">
+              <div className="flex flex-col     items-center justify-center text-white text-md mt-5 font-normal md:mt-10">
                 <ProjectList />
               </div>
             </div>
@@ -77,7 +77,7 @@ function ProjectList() {
   return (
     <div
       id="projects"
-      className="flex flex-col md:grid md:gap-10 w-full   gap-y-10     "
+      className="flex flex-col md:grid md:gap-10   gap-y-10     "
     >
       <div className="flex flex-col   md:grid grid-cols-[60%_30%] gap-10  ">
         <div
@@ -156,8 +156,8 @@ function ProjectList() {
                   </div>
                 </div>
                 <p className="text-gray-400 text-sm font-normal">
-                 
-                  An app that predicts crypto and analyzes prices using AI 🤑 💸!
+                  An app that predicts crypto and analyzes prices using AI 🤑
+                  💸!
                 </p>
               </div>
             </div>
