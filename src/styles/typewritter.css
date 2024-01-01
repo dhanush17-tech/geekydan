@@ -1,16 +1,45 @@
-.typewriter-text {
-  display: inline; /* or 'inline-block' as needed */
-    /* Adjust as needed */
-  /* other font styles to match your h1 */
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.typewriter-cursor {
-  display: inline-block;
-  width: 3px; /* Represents the width of the character */
-  border-right: 2px solid transparent;
-  animation: blinkCursor 1s steps(2, start) infinite;
-}
 
 @keyframes blinkCursor {
   50% { border-color: transparent; opacity: 0}
+}
+ 
+ 
+/* @keyframes rollText {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+} */
+
+.animate-roll {
+  display: inline-flex;
+  /* animation: rollText 1s linear; Adjusted to play only once */
+}
+
+.animate-roll-second {
+  display: inline-flex;
+  animation: rollText 0.5s linear; /* Adjusted for the second animation */
+}
+@keyframes roll1 {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.letter {
+  display: inline-block; /* Added for individual letter styling */
+  overflow: hidden;
+  opacity: 0; /* Start with letters invisible */
+  animation: roll1 0.4s ease-in forwards;
 }

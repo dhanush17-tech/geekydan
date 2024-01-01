@@ -1,47 +1,29 @@
 import React, { useState, useEffect } from "react";
+import RollingLetters from "./rollingLetter";
 
-const titles = ["Mobile App Dev", "Programmer", "UI/UX Designer"];
+const RollingTextAnimation = () => {
+  const [showSecondText, setShowSecondText] = useState(false);
 
-const Typewriter = () => {
-  const [index, setIndex] = useState(0);
-  const [subIndex, setSubIndex] = useState(0);
-  const [blink, setBlink] = useState(true);
-  const [reverse, setReverse] = useState(false);
-
-  // Typing effect
   useEffect(() => {
-    if (subIndex === titles[index].length + 1 && !reverse) {
-      setReverse(true);
-      return;
-    }
+    const timer = setTimeout(() => {
+      setShowSecondText(!showSecondText);
+    }, 4000); // Duration of the first text's animation
 
-    if (subIndex === 0 && reverse) {
-      setReverse(false);
-      setIndex((prev) => (prev + 1) % titles.length);
-      return;
-    }
-
-    const timeout = setTimeout(() => {
-      setSubIndex((prev) => prev + (reverse ? -1 : 1));
-    }, Math.max(reverse ? 75 : subIndex === titles[index].length ? 1000 : 150, parseInt((Math.random() * 350).toString())));
-
-    return () => clearTimeout(timeout);
-  }, [subIndex, index, reverse]);
-
-  // Blinking cursor effect
-  useEffect(() => {
-    const timeout2 = setTimeout(() => {
-      setBlink((prev) => !prev);
-    }, 500);
-    return () => clearTimeout(timeout2);
-  }, [blink]);
+    return () => clearTimeout(timer);
+  }, [showSecondText]);
 
   return (
-    <span className="typewriter-text  text-4xl md:text-6xl lg:text-[4.4rem] font-extra-bold text-white leading-none relative before:absolute before:inset-x-0 before:bottom-0 md:before:bottom-2 lg:before:bottom-2  before:block before:w-[90%] before:h-[14px] before:bg-blue before:bg-opacity-60 ">
-      {`${titles[index].substring(0, subIndex)}`}
-      <span className="typewriter-cursor">{blink ? "|" : " "}</span>
-    </span>
+    <div className="rolling-text-container   w-full pl-3">
+      <div className="animate-roll   top-0 text-4xl md:text-6xl lg:text-[4.4rem] font-extra-bold text-white leading-none relative before:absolute before:inset-x-0 before:bottom-0 md:before:bottom-2 lg:before:bottom-2  before:block before:w-[100%] before:h-[14px] before:bg-blue before:bg-opacity-60 ">
+        {!showSecondText && <RollingLetters text="Mobile App Dev" />}
+      </div>
+      {showSecondText && (
+        <div className="animate-roll-second   top-0 text-4xl md:text-6xl lg:text-[4.4rem] font-extra-bold text-white leading-none relative before:absolute before:inset-x-0 before:bottom-0 md:before:bottom-2 lg:before:bottom-2  before:block before:w-[100%] before:h-[14px] before:bg-blue before:bg-opacity-60 ">
+          <RollingLetters text="UI/UX Desginer" />
+        </div>
+      )}
+    </div>
   );
 };
 
-export default Typewriter;
+export default RollingTextAnimation;

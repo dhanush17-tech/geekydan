@@ -8,7 +8,7 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons"; // Make sure to import the icon
 import NavBar from "./navbar";
-import Typewriter from "./typewritter";
+import RollingTextAnimation from "./typewritter";
 import { BackgroundBeams } from "./backgroundBeams";
 import Link from "next/link";
 export default function HomePage() {
@@ -101,7 +101,7 @@ export default function HomePage() {
       </div>
 
       {/* Main content grid */}
-      <div className="relative top-[-5%]  grid grid-cols-1 md:grid-cols-2 items-center h-full  px-10 md:px-32">
+      <div className="relative top-[-5%]  grid grid-cols-1 md:grid-cols-[60%_40%] items-center h-full  px-10 md:px-32">
         {/* Left Column for Content */}
         <div className=" home-left flex flex-col justify-center space-y-5 ">
           {/* Content */}
@@ -141,8 +141,8 @@ export default function HomePage() {
               Dhanush
             </span>
           </h1>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl  text-white leading-none">
-            a <Typewriter />
+          <h2  className="flex flex-grow text-4xl md:text-6xl lg:text-7xl  text-white leading-none">
+            a <RollingTextAnimation />
           </h2>
           <p className="text-sm md:text-xl lg:text-xl font-normal margin-top    text-white mt-10 md:mt-14">
             Mobile App Developer | Winner of 5+ Hackathons | Helping Startups

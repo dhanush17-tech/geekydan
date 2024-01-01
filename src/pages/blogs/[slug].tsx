@@ -113,7 +113,7 @@ const PostPage: React.FC<PostPageProps> = ({ post }) => {
             </ul>
           </div>
           <div className="my-12 text-start "></div>
-          <article className="prose text-white/60 prose-headings:text-blue prose-h3:text-slate-400 prose-img:rounded-lg prose-strong:text-white">
+          <article className="prose  prose-a:text-white  text-white/60 prose-headings:text-blue prose-h3:text-slate-400 prose-img:rounded-lg prose-strong:text-white  prose-code:text-white prose-code:before:inset-0 prose-code:before:bg-white/50">
             <Markdown>{post.content}</Markdown>
           </article>
         </div>
