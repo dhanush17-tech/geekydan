@@ -62,6 +62,13 @@ export default function Mentorship() {
       organization: "Google IO Extended",
       link: "https://www.youtube.com/live/s4VScWsR5OY?si=NqH1I_zAsVjiEvIr",
     },
+    {
+      title: "Basics of Flutter in 1 hour",
+      description:
+        "Invited as a speaker to host a workshop on Flutter with over 45+ participants",
+      organization: "Software Developer Organization ASU",
+      link: "https://www.youtube.com/watch?v=ZxtsH-a03_M",
+    },
     // Add more experiences as needed
   ];
 
@@ -110,7 +117,8 @@ const ExperienceCard = ({
   link,
 }: MentorshipType) => {
   return (
-    <Link key={title + organization} href={link}>
+    //open link in new tab
+    <a target="_blank" key={title + organization} href={link}>
       <div className="  projects bg-[#1E293B] shadow-lg rounded-lg p-6 text-white">
         <div className="flex items-start justify-between">
           <FontAwesomeIcon
@@ -127,6 +135,6 @@ const ExperienceCard = ({
           <p className="text-sm mt-2 ">{description}</p>
         </div>
       </div>
-    </Link>
+    </a>
   );
 };
