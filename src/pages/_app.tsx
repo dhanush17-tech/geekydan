@@ -36,19 +36,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta
           property="og:image"
-          content="https://pbs.twimg.com/profile_banners/1701794897270042624/1694578174/1500x500"
+          content="https://dhanush.wtf/media/sac6qa5b9os.png"
         />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@geeky_dan" />
-        <meta name="twitter:title" content="Dhanush Vardhan" />
-        <meta
-          name="twitter:description"
-          content="18 y/o self taught dev • full time indie hacker 👨‍💻 • building http://shopwise.tech  •  freelancer(helping startups soar) 🚀🚀"
-        />
-        <meta
-          name="twitter:image"
-          content="https://pbs.twimg.com/profile_banners/1701794897270042624/1694578174/1500x500"
-        />
+      
         <link rel="canonical" href="http://www.geekydan.dev/" />
         <link rel="icon" href="/assets/memoji.png" type="image/png" />
       </Head>

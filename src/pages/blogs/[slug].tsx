@@ -16,6 +16,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import BlurredBackground from "../../components/blurredBack";
 import Link from "next/link";
+import Head from "next/head";
 // Assume getPostMetadata is a synchronous function. If it's async, you should await it.
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -54,6 +55,7 @@ type PostPageProps = {
     data: {
       title: string;
       date: string;
+      subtitle: string;
       // add other frontmatter data as needed
     };
   };
@@ -61,64 +63,87 @@ type PostPageProps = {
 
 const PostPage: React.FC<PostPageProps> = ({ post }) => {
   return (
-    <div className="relative min-h-screen">
-      <BlurredBackground />
+    <>
+      <Head>
+        <meta
+          property="og:image"
+          content={`http://geekydan.dev/api/og?title=${post.data.title}&subtitle=${post.data.subtitle}`}
+        />{" "}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@geeky_dan" />
+        <meta name="twitter:title" content="Dhanush Vardhan" />
+        <meta
+          name="twitter:description"
+          content="18 y/o self taught dev • full time indie hacker 👨‍💻 • building http://shopwise.tech  •  freelancer(helping startups soar) 🚀🚀"
+        />
+        <meta
+          name="twitter:image"
+          content={`http://geekydan.dev/api/og?title=${post.data.title}&subtitle=${post.data.subtitle}`}
+        />
+        <meta
+          property="og:image"
+          content={`http://geekydan.dev/api/og?title=${post.data.title}&subtitle=${post.data.subtitle}`}
+        />
+      </Head>
+      <div className="relative min-h-screen">
+        <BlurredBackground />
 
-      <div className="w-fulll relative z-10">
-        <div className=" flex flex-col space-y-5  w-full px-12 md:px-24    z-20  pt-10 md:pt-20">
-          <h1 className="text-[40px] mt-2 font-bold text-blue ">
-            {post.data.title}
-          </h1>{" "}
-          <div className="flex flex-col md:flex-row  w-full space-y-5 md:space-y-0 justify-between mb-1 ">
-            <div className="text-xs text-slate-500 uppercase space-x-5">
-              <span className="text-sky-500">—</span>
-              <time dateTime="2023-11-16T00:00:00.000Z">Nov 16, 2023</time>
-              <span className="text-slate-400 dark:text-slate-600">·</span>4 Min
-              read
-            </div>
-            <ul className=" inline-flex space-x-5 md:space-x-10">
-              {/* Twitter */}
+        <div className="w-fulll relative z-10">
+          <div className=" flex flex-col space-y-5  w-full px-12 md:px-24    z-20  pt-10 md:pt-20">
+            <h1 className="text-[40px] mt-2 font-bold text-blue ">
+              {post.data.title}
+            </h1>{" "}
+            <div className="flex flex-col md:flex-row  w-full space-y-5 md:space-y-0 justify-between mb-1 ">
+              <div className="text-xs text-slate-500 uppercase space-x-5">
+                <span className="text-sky-500">—</span>
+                <time dateTime="2023-11-16T00:00:00.000Z">Nov 16, 2023</time>
+                <span className="text-slate-400 dark:text-slate-600 "> </span>4
+                Min read
+              </div>
+              <ul className=" inline-flex space-x-5 md:space-x-10">
+                {/* Twitter */}
 
-              {/* Facebook */}
-              <li>
-                <Link
-                  aria-label="Dhanush Vardhan Github"
-                  href={"https://github.com/dhanush17-tech"}
-                >
-                  <FontAwesomeIcon
-                    icon={faGithub}
-                    className="text-white/50 text-xl"
-                  />
-                </Link>
-              </li>
-              {/* Share */}
-              <li>
-                <Link href={"https://twitter.com/geeky_dan"}>
-                  {" "}
-                  <FontAwesomeIcon
-                    icon={faXTwitter}
-                    className="text-white/50 text-xl"
-                  />{" "}
-                </Link>
-              </li>
-              <button>
-                {" "}
+                {/* Facebook */}
                 <li>
-                  <FontAwesomeIcon
-                    icon={faShare}
-                    className="text-white/50 text-xl"
-                  />
+                  <Link
+                    aria-label="Dhanush Vardhan Github"
+                    href={"https://github.com/dhanush17-tech"}
+                  >
+                    <FontAwesomeIcon
+                      icon={faGithub}
+                      className="text-white/50 text-xl"
+                    />
+                  </Link>
                 </li>
-              </button>
-            </ul>
+                {/* Share */}
+                <li>
+                  <Link href={"https://twitter.com/geeky_dan"}>
+                    {" "}
+                    <FontAwesomeIcon
+                      icon={faXTwitter}
+                      className="text-white/50 text-xl"
+                    />{" "}
+                  </Link>
+                </li>
+                <button>
+                  {" "}
+                  <li>
+                    <FontAwesomeIcon
+                      icon={faShare}
+                      className="text-white/50 text-xl"
+                    />
+                  </li>
+                </button>
+              </ul>
+            </div>
+            <div className="my-12 text-start "></div>
+            <article className="prose  prose-a:text-white  text-white/60 prose-headings:text-white prose-h3:text-slate-400 prose-img:rounded-lg prose-strong:text-white  prose-code:text-white prose-code:before:inset-0 prose-code:before:bg-white/50">
+              <Markdown>{post.content}</Markdown>
+            </article>
           </div>
-          <div className="my-12 text-start "></div>
-          <article className="prose  prose-a:text-white  text-white/60 prose-headings:text-blue prose-h3:text-slate-400 prose-img:rounded-lg prose-strong:text-white  prose-code:text-white prose-code:before:inset-0 prose-code:before:bg-white/50">
-            <Markdown>{post.content}</Markdown>
-          </article>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
