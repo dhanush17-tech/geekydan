@@ -83,13 +83,14 @@ export default function Experience() {
           <div className="">
             {"  "}
             {/* Adjust max width as needed */}
-            <div className="flex-grow justify-start space-x-5 md:w-[85%]">
-              <h1 className="text-2xl  md:text-md lg:text-4xl text-white flex  ">
+            <div className="flex justify-start items-center space-x-5 md:w-[85%]">
+              <h1 className="text-2xl md:text-md lg:text-4xl text-white flex">
                 {"02.  "}
                 <span className="text-blue ml-2"> My Experience </span>
               </h1>
-              <div className="h-[3px] bg-gradient-to-tr from-slate-600 to-transparent w-[30%] self-center"></div>
+              <div className="h-[3px] bg-gradient-to-tr from-slate-600 to-transparent w-[30%]"></div>
             </div>
+
             <div className="flex flex-col items-center justify-center text-white text-md mt-5 font-normal md:mt-10">
               <MyExperience />
             </div>

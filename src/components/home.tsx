@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
- import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
   faGithub,
@@ -7,7 +7,7 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons"; // Make sure to import the icon
 import NavBar from "./navbar";
-  import Link from "next/link";
+import Link from "next/link";
 import Typewriter from "./elements/typewritter";
 export default function HomePage() {
   useEffect(() => {
