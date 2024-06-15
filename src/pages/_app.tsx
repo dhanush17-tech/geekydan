@@ -1,7 +1,6 @@
 import { AppProps } from "next/app";
 import "../styles/globals.css";
 import "../styles/typewritter.css";
-import BlurredBackground from "../components/blurredBack";
 import NavBar from "../components/navbar";
 import HomePage from "../components/home";
 import AboutMe from "../components/aboutme";
@@ -15,6 +14,7 @@ import Contact from "../components/contactMe";
 import Footer from "../components/footer";
 import Blogs from "../components/blogs";
 import Head from "next/head";
+import BlurredBackground from "../components/elements/blurredBack";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
@@ -38,7 +38,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           property="og:image"
           content="https://dhanush.wtf/media/sac6qa5b9os.png"
         />
-      
+
         <link rel="canonical" href="http://www.geekydan.dev/" />
         <link rel="icon" href="/assets/memoji.png" type="image/png" />
       </Head>

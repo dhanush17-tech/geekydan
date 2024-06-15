@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import BlurredBackground from "./blurredBack";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
   faGithub,
@@ -8,9 +7,8 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons"; // Make sure to import the icon
 import NavBar from "./navbar";
-import Typewriter from "./typewritter";
-import { BackgroundBeams } from "./backgroundBeams";
-import Link from "next/link";
+  import Link from "next/link";
+import Typewriter from "./elements/typewritter";
 export default function HomePage() {
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -87,7 +85,7 @@ export default function HomePage() {
         </Link>
         <Link
           target="_blank"
-          href="https://www.instagram.com/dhanu_sh.17/"
+          href="https://www.instagram.com/geeky.dan/"
           legacyBehavior
         >
           <a aria-label="Dhanush Vardhan Instagram">

@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { cn } from "../utils/cn";
-
+import { cn } from "../../utils/cn";
+ 
 export const BackgroundBeams = ({ className }: { className?: string }) => {
   const paths = [
     "M-380 -189C-380 -189 -312 216 152 343C616 470 684 875 684 875",

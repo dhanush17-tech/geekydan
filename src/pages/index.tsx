@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Contact from "../components/contactMe";
-import BlurredBackground from "../components/blurredBack";
 import HomePage from "../components/home";
 
 import AboutMe from "../components/aboutme";
@@ -12,6 +11,7 @@ import Blogs from "../components/blogs";
 import { PostMetadata } from "../../blogMethods/blogType";
 import Head from "next/head";
 import SEO from "../components/seo";
+import BlurredBackground from "../components/elements/blurredBack";
 
 export const getStaticProps = async () => {
   const { getPostMetadata } = await import("../../blogMethods/readFile");
@@ -80,14 +80,13 @@ const Main = ({ posts }: MainProps) => {
         <main className="flex-grow ">
           <BlurredBackground />
           <div className="flex-col z-10 relative mx-auto justify-center items-center max-w-[1572px]">
-               <HomePage />
-              <AboutMe />
-              <Experience />
-              <MyProjects />
-              <Blogs posts={posts} />
-              <Mentorship />
-              <Contact />
-           
+            <HomePage />
+            <AboutMe />
+            <Experience />
+            <MyProjects />
+            <Blogs posts={posts} />
+            <Mentorship />
+            <Contact />
           </div>
         </main>
       </div>

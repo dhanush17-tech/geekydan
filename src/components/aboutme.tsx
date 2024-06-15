@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import BlurredBackground from "./blurredBack";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
@@ -41,16 +40,25 @@ export default function AboutMe() {
         id="aboutme"
         className=" mt-10 flex flex-col-reverse md:grid  md:grid-cols-[40%_60%] md:gap-10 items-center justify-center md:pl-14 md:pr-24"
       >
-        <div className="flex justify-center items-center h-full pr-10 md:pr-0 ">
-          <div className="photo relative left-[5%] md:left-0  h-[40vh] w-[30vh] md:w-[50vh] md:h-[55vh] mt-5 md:mt-0 self-center text-center rounded-lg border-7 border-blue bg-white before:before-absolute before:rounded-lg before:border-blue before:border-[5px] object-cover">
+        <div className="flex justify-center items-center h-full pr-10 md:pr-0">
+          <div className="photo relative left-[5%] md:left-0 h-[40vh] w-[30vh] md:w-[50vh] md:h-[55vh] mt-5 md:mt-0 self-center text-center rounded-lg border-7 border-blue bg-white before:before-absolute before:rounded-lg before:border-blue before:border-[5px] object-cover">
+            <div className="relative w-full h-full rounded-lg overflow-hidden border-[5px] border-blue">
+              <Image
+                fill={true}
+                className="object-cover"
+                src="/assets/me.jpg"
+                alt="Photo of Dhanush Vardhan"
+              />
+            </div>
             <Image
               fill={true}
-              className=" w-full rounded-lg object-cover border-[5px] border-blue after::shadow-xl"
+              className="w-full object-contain p-5 rounded-lg bg-clip-border  border-[5px] backdrop-blur-sm bg-white/0 border-blue"
               src="/assets/me.jpg"
               alt="Photo of Dhanush Vardhan"
             />
           </div>
-        </div>{" "}
+        </div>
+
         <div className=" about-us flex flex-col justify-center items-center px-10 my-5 ">
           <div className="">
             {"  "}

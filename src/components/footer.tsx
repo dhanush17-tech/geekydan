@@ -8,8 +8,7 @@ import {
   faLinkedin,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons"; // components/Footer.js
-import { GlowingStarsBackgroundCard } from "./glowing-stars";
-import { BackgroundBeams } from "./backgroundBeams";
+
 import Link from "next/link";
 export default function Footer() {
   const year = new Date().getFullYear(); // Dynamic year for the copyright notice

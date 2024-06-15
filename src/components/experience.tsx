@@ -1,6 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAnglesRight, faPlay } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleRight,
+  faAnglesRight,
+  faPlay,
+} from "@fortawesome/free-solid-svg-icons";
 import TagCloud from "TagCloud";
 import Link from "next/link";
 import Image from "next/image";
@@ -91,14 +95,17 @@ export default function Experience() {
             </div>
           </div>
         </div>
-        <div className="hidden md:flex h-20  text-blue md:pr-0" ref={containerRef}></div>
+        <div
+          className="hidden md:flex h-20  text-blue md:pr-0"
+          ref={containerRef}
+        ></div>
         {/* Right column contents */}
       </div>
     </>
   );
 }
 function MyExperience() {
-  const [activeTab, setTab] = useState<String>("UFF");
+  const [activeTab, setTab] = useState<String>("Cloudflare");
   const [isVisible, setIsVisible] = useState(true);
 
   function setActiveTab(tab: string) {
@@ -114,14 +121,14 @@ function MyExperience() {
         <div className="grid grid-cols-2 md:grid-cols-1 items-center    ">
           {/* Experience blocks */}
           <div
-            onClick={() => setActiveTab("UFF")}
+            onClick={() => setActiveTab("Cloudflare")}
             className={`w-full md:w-32 h-14  md:rounded-none    md: transparent md:text-blue  ${
-              activeTab == "UFF"
+              activeTab == "Cloudflare"
                 ? "border-b-4 md:border-b-0 md:border-l-4 border-blue"
                 : "md:border-l-4 md:border-blue/20 "
             } flex items-center justify-center text-md text-white`}
           >
-            <p>UFF</p>
+            <p>Cloudflare</p>
           </div>
           <div
             onClick={() => setActiveTab("Freelancer")}
@@ -139,53 +146,60 @@ function MyExperience() {
             isVisible ? "in-view" : ""
           } job-description flex flex-col mt-5`}
         >
-          {activeTab === "UFF" ? (
-            <>
-              <h1 className="text-2xl text-white font-bold">
-                Software Engineering Intern
-              </h1>
-              <h1 className="text-xl text-blue font-bold">@UFF</h1>
-            </>
+          {activeTab === "Cloudflare" ? (
+            <div className="flex items-start  ">
+              <div className="flex mt-2">
+                <div className="w-12 h-12 rounded-lg  bg-blue-500 bg-opacity-50 flex items-center justify-center overflow-hidden">
+                  <img
+                    src="https://static-00.iconduck.com/assets.00/cloudflare-icon-2048x2048-k5hf9ugn.png"
+                    alt=""
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="flex flex-col ml-4">
+                <h1 className="text-2xl text-white font-bold">
+                  Software Engineering Intern
+                </h1>
+                <h1 className="text-xl text-blue font-bold">@Cloudflare</h1>
+              </div>
+            </div>
           ) : (
-            <>
-              {" "}
-              <h1 className="text-2xl text-white font-bold">
-                Mobile App Developer
-              </h1>
-              <h1 className="text-xl text-blue font-bold">@Freelancer</h1>
-            </>
+            <div className="flex items-start  ">
+              <div className="flex mt-2">
+                <div className="w-12 h-12 rounded-lg text-3xl bg-blue bg-opacity-20 flex items-center justify-center overflow-hidden">
+                  😎
+                </div>
+              </div>
+              <div className="flex flex-col ml-4">
+                <h1 className="text-2xl text-white font-bold">
+                  Mobile App Developer
+                </h1>
+                <h1 className="text-xl text-blue font-bold">@Freelancer</h1>
+              </div>
+            </div>
           )}
           <ul className="text-gray-400 text-sm font-normal mt-5">
             {/* List items */}
-            {activeTab === "UFF" ? (
+            {activeTab === "Cloudflare" ? (
               <>
                 <li className="flex flex-row items-start gap-2 ">
                   <FontAwesomeIcon
-                    className="text-blue   text-[15px] mt-1 w-12  "
-                    icon={faAnglesRight}
+                    className="mt-1  md:mt-1/2 w-[10%] max-w-[0.6rem]  "
+                    icon={faAngleRight}
                   />
                   <span>
-                    Developed and prototyped the Android app using Flutter and
-                    Figma, leveraging the Google Maps API and Dialog Flow APIs,
-                    and integrated Razor Pay as the payment gateway
-                  </span>
-                </li>
-                <li className="flex items-start gap-2 mt-5">
-                  <FontAwesomeIcon
-                    className="text-blue w-[1.7rem] text-[15px] mt-1  "
-                    icon={faAnglesRight}
-                  />
-                  <span>
-                    Developed REST API using Node.js, Express, and MongoDB for
-                    the backend, ensuring efficient data management
+                    Developed the Zero Trust Desktop Client in Flutter and
+                    optimized the Rust daemon for the client, ensuring secure
+                    and efficient data transfer.
                   </span>
                 </li>
               </>
             ) : (
               <li className="flex items-start gap-2">
                 <FontAwesomeIcon
-                  className="text-blue text-[15px] mt-1 w-[12.7rem]  "
-                  icon={faAnglesRight}
+                  className="mt-1  md:mt-1/2 w-[10%] max-w-[0.6rem] "
+                  icon={faAngleRight}
                 />
                 <span>
                   Successfully collaborated with over 12 clients, demonstrating

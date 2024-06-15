@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Footer from "./footer";
-import { BackgroundBeams } from "./backgroundBeams";
 import Link from "next/link";
+import { BackgroundBeams } from "./elements/backgroundBeams";
 
 // components/Footer.js
 export default function Contact() {

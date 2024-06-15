@@ -5,7 +5,6 @@ import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { PostMetadata } from "../../../blogMethods/blogType"; // Adjust the import path as necessary
-import { CustomH1 } from "../../components/customH1";
 import { faShare } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
@@ -14,9 +13,9 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import BlurredBackground from "../../components/blurredBack";
 import Link from "next/link";
 import Head from "next/head";
+import BlurredBackground from "../../components/elements/blurredBack";
 // Assume getPostMetadata is a synchronous function. If it's async, you should await it.
 
 export const getStaticPaths: GetStaticPaths = async () => {
