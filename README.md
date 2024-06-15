@@ -1,46 +1,107 @@
-# Getting Started with Create React App
+<h1 style="font-size: 30px; color: #0284c7; font-weight: bold;"><a href="https://geekydan.dev">
+geekydan.dev
+</a></h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="https://pbs.twimg.com/media/GCAYfIQW0AAczqR?format=jpg&name=4096x4096" alt="geekydan.dev" style=" border-radius: 15px;">
+</p>
 
-## Available Scripts
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Responsive Design:** Fully responsive design that works on all devices.
+- **Dynamic Content:** Easily update content via Markdown files.
+- **Blog Integration:** Simple blogging platform built with Markdown.
+- **Project Showcase:** Showcase your projects with detailed descriptions and images.
+- **Contact Form:** Functional contact form powered by EmailJS or similar service.
+- **SEO Optimized:** SEO-friendly to help your site rank better in search results.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Table of Contents
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [Customization](#customization)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm test`
+## Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Check out the live demo of the site: [geekydan.dev](https://geekydan.dev)
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get a local copy up and running, follow these simple steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Make sure you have the following installed:
+- [Node.js](https://nodejs.org/) (v14.x or later)
+- [Yarn](https://yarnpkg.com/)
 
-### `npm run eject`
+### Clone the Repository
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+git clone https://github.com/dhanush17-tech/geekydan.git
+cd geekydan
+```
+### Install Dependencies
+```
+yarn install
+```
+Usage
+Running the Development Server
+To start the development server, run:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+yarn dev
+```
+Open http://localhost:3000 with your browser to see the result.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Folder Structure
+Here is a brief overview of the project's folder structure:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+.
+├── public
+│   ├── assets
+│       ├── hackathons
+│       ├── icons
+│       ├── projects
+│       ├── resume
+├── src
+│   ├── components
+│       └── elements
+│   ├── pages
+│       ├── api
+│       └── blogs
+│   ├── styles
+│   ├── utils
 
-## Learn More
+```
+## Customization
+To customize the content, update the Markdown files located in the src/content directory:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Blog Posts**: Add or edit posts in the src/content/blog directory.
+- **Projects**: Add or edit projects in the src/content/projects directory.
+- You can also update the site configuration in the src/utils/config.js file.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Deployment
+The easiest way to deploy this portfolio is to use [Vercel](https://vercel.com)
+
+1. Push your code to GitHub.
+2. Create a new project on [Vercel](https://vercel.com) and import your repository.
+
+## Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+### Fork the Project
+1. Create your Feature Branch (```git checkout -b feature/AmazingFeature```)
+2. Commit your Changes (```git commit -m 'Add some AmazingFeature' ```)
+3. Push to the Branch (```git push origin feature/AmazingFeature ```)
+4. Open a Pull Request
+
+## License
+Distributed under the MIT License.
