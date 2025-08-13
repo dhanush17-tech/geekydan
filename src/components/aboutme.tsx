@@ -45,15 +45,15 @@ export default function AboutMe() {
             <div className="relative w-full h-full rounded-lg overflow-hidden border-[5px] border-blue">
               <Image
                 fill={true}
-                className="object-cover"
-                src="/assets/me.jpg"
+                className="object-cover w-9 h-16"
+                src="/assets/me2.jpeg"
                 alt="Photo of Dhanush Vardhan"
               />
             </div>
             <Image
               fill={true}
               className="w-full object-contain p-5 rounded-lg bg-clip-border  border-[5px] backdrop-blur-sm bg-white/0 border-blue"
-              src="/assets/me.jpg"
+              src="/assets/me2.jpeg"
               alt="Photo of Dhanush Vardhan"
             />
           </div>

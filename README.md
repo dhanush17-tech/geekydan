@@ -6,6 +6,9 @@ geekydan.dev
   <img src="https://pbs.twimg.com/media/GCAYfIQW0AAczqR?format=jpg&name=4096x4096" alt="geekydan.dev" style=" border-radius: 15px;">
 </p>
 
+## 🚨 Forking this repo (please read!)
+You can fork this repo! **Please give me proper credit by linking back to [geekydan.dev](https://geekydan.dev)**. Thanks!
+
 
 ## Features
 

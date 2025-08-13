@@ -1,0 +1,14 @@
+{
+  "/_app": "pages/_app.js",
+  "/github": "pages/github.js",
+  "/insta": "pages/insta.js",
+  "/mail": "pages/mail.js",
+  "/resume": "pages/resume.js",
+  "/x": "pages/x.js",
+  "/_error": "pages/_error.js",
+  "/": "pages/index.js",
+  "/blogs/[slug]": "pages/blogs/[slug].js",
+  "/_document": "pages/_document.js",
+  "/api/og": "pages/api/og.js",
+  "/api/blogs/[slug]/twitter-image": "pages/api/blogs/[slug]/twitter-image.js"
+}

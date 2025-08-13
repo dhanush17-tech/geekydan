@@ -133,14 +133,20 @@ export default function HomePage() {
           </button> */}
 
           <p className="text-xl md:text-2xl  text-blue ">Hello there 👋</p>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl   text-white leading-none my-4">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl text-white leading-none my-4">
             I'm{" "}
-            <span className="relative font-[600] before:absolute before:inset-x-0 before:bottom-0 leading-none md:before:bottom-2 lg:before:bottom-2  before:block before:w-[100%] before:h-[14px] before:bg-blue before:bg-opacity-60">
-              Dhanush
+            <span className="relative font-[600] leading-none ml-4">
+              <span className="absolute inset-x-[-12px] bottom-0 md:bottom-2 lg:bottom-2 w-[calc(100%+24px)] h-[80%] bg-blue bg-opacity-20 -z-10 rotate-[-4deg] rounded-[4px]"></span>
+              <span className="relative text-4xl md:text-5xl lg:text-6xl">
+                Dhanush
+              </span>
             </span>
           </h1>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl  text-white leading-none">
-            a <Typewriter />
+          <h2 className="text-4xl md:text-6xl lg:text-7xl text-white leading-none">
+            a{" "}
+            <span className="inline-flex items-center">
+              <Typewriter />
+            </span>
           </h2>
           <p className="text-sm md:text-xl lg:text-xl font-normal margin-top    text-white mt-10 md:mt-14">
             Mobile App Developer | Winner of 5+ Hackathons | Helping Startups

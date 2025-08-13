@@ -22,7 +22,7 @@
     "autoprefixer": "^10.4.16",
     "clsx": "^2.0.0",
     "firebase": "^10.7.1",
-    "framer-motion": "^10.16.16",
+    "framer-motion": "^10.18.0",
     "gray-matter": "^4.0.3",
     "markdown-to-jsx": "^7.3.2",
     "next": "^14.0.4",

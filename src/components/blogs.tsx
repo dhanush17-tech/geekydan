@@ -60,15 +60,16 @@ export default function Blogs({ posts }: Props) {
 }
 
 export function BlogList({ posts }: { posts: PostMetadata[] }) {
+  const reversedPosts = [...posts].reverse();
   return (
     <div className="space-y-10 mt-10">
-      {posts.map((post, index) => (
+      {reversedPosts.map((post, index) => (
         <div
-          key={post.imgUrl+ index + index}
+          key={post.imgUrl + index + index}
           className="flex flex-col space-y-5"
         >
           <BlogCard key={post.imgUrl + index} post={post} />
-          {index === posts.length - 1 ? null : (
+          {index === reversedPosts.length - 1 ? null : (
             <div
               key={post.subtitle + index}
               className="width-full h-[1px] rounded-lg  custom-radial-gradient"
@@ -100,7 +101,7 @@ export function BlogCard({ post }: { post: PostMetadata }) {
             {post.title}
           </h3>
           <p className="mt-2 text-gray-400 text-xs  ">{post.subtitle}</p>
-          <span className="inline-flex text-xs items-center mt-2 text-blue/50 hover:text-blue-500">
+          <span className="inline-flex text-xs items-center mt-2 text-blue hover:text-blue-500">
             Read more
             {/* SVG icon */}
           </span>

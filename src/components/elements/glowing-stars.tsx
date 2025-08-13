@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "../../utils/cn";
- 
+
 export const GlowingStarsBackgroundCard = ({
   className,
   children,
@@ -21,12 +21,12 @@ export const GlowingStarsBackgroundCard = ({
       onMouseLeave={() => {
         setMouseEnter(false);
       }}
-      className={cn("  h-full w-full absolute ", className)}
+      className={cn("relative w-full h-full", className)}
     >
-      <div className="flex justify-center items-center">
+      <div className="absolute inset-0">
         <Illustration mouseEnter={mouseEnter} />
       </div>
-      <div className="px-2 pb-6">{children}</div>
+      {children && <div className="relative z-10 px-2 pb-6">{children}</div>}
     </div>
   );
 };
@@ -60,41 +60,47 @@ export const GlowingStarsTitle = ({
 };
 
 export const Illustration = ({ mouseEnter }: { mouseEnter: boolean }) => {
-  const stars = 108;
-  const columns = 18;
-
+  const stars = 30;
   const [glowingStars, setGlowingStars] = useState<number[]>([]);
-
+  const [starPositions, setStarPositions] = useState<
+    Array<{ x: number; y: number }>
+  >([]);
   const highlightedStars = useRef<number[]>([]);
 
   useEffect(() => {
+    const positions = Array.from({ length: stars }, () => ({
+      x: Math.random() * 98 + 1,
+      y: Math.random() * 98 + 1,
+    }));
+    setStarPositions(positions);
+
     const interval = setInterval(() => {
-      highlightedStars.current = Array.from({ length: 5 }, () =>
+      highlightedStars.current = Array.from({ length: 3 }, () =>
         Math.floor(Math.random() * stars)
       );
       setGlowingStars([...highlightedStars.current]);
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div
-      className="h-[100vh] p-1 w-full"
-      style={{
-        display: "grid",
-        gridTemplateColumns: `repeat(${columns}, 1fr)`,
-        gap: `1px`,
-      }}
-    >
+    <div className="w-full h-full relative overflow-hidden">
       {[...Array(stars)].map((_, starIdx) => {
         const isGlowing = glowingStars.includes(starIdx);
-        const delay = (starIdx % 10) * 0.1;
-        const staticDelay = starIdx * 0.2;
+        const delay = (starIdx % 5) * 0.2;
+        const staticDelay = starIdx * 0.1;
+        const position = starPositions[starIdx] || { x: 0, y: 0 };
+
         return (
           <div
-            key={`matrix-col-${starIdx}}`}
-            className="relative flex items-center justify-center"
+            key={`star-${starIdx}`}
+            className="absolute"
+            style={{
+              left: `${position.x}%`,
+              top: `${position.y}%`,
+              transform: "translate(-50%, -50%)",
+            }}
           >
             <Star
               isGlowing={mouseEnter ? true : isGlowing}
@@ -127,7 +133,9 @@ const Star = ({ isGlowing, delay }: { isGlowing: boolean; delay: number }) => {
         ease: "easeInOut",
         delay: delay,
       }}
-      className={cn("bg-[#666] h-[2px] w-[2px] rounded-full relative z-20")}
+      className={cn(
+        "h-[3px] w-[3px] md:h-[4px] md:w-[4px] bg-[#666] rounded-full relative z-20"
+      )}
     ></motion.div>
   );
 };
@@ -149,7 +157,7 @@ const Glow = ({ delay }: { delay: number }) => {
       exit={{
         opacity: 0,
       }}
-      className="absolute  left-1/2 -translate-x-1/2 z-10 h-[4px] w-[4px] rounded-full bg-blue-500 blur-[1px] shadow-2xl shadow-blue-400"
+      className="absolute left-1/2 -translate-x-1/2 z-10 h-[6px] w-[6px] md:h-[8px] md:w-[8px] rounded-full bg-blue-500 blur-[2px] shadow-2xl shadow-blue-400"
     />
   );
 };
